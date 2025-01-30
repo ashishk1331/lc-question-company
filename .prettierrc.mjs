@@ -4,7 +4,7 @@ export default {
   trailingComma: 'all',
   singleQuote: true,
   semi: true,
-  importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
+  importOrder: ['^@/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   plugins: [

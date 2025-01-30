@@ -1,5 +1,5 @@
+import Row from '@/components/CompanyRow';
 import { Question } from '@/types/types';
-import Link from 'next/link';
 
 import bank from '../data/question_bank.json';
 
@@ -22,16 +22,7 @@ export default function Example() {
           </div>
           <ul role="list" className="divide-y divide-gray-100">
             {directory[letter].map((company) => (
-              <li key={company} className="flex gap-x-4 px-3 py-5">
-                <div className="min-w-0">
-                  <Link
-                    href={'/' + company}
-                    className="text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    {company}
-                  </Link>
-                </div>
-              </li>
+              <Row key={company} company={company} />
             ))}
           </ul>
         </div>
