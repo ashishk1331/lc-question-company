@@ -31,7 +31,9 @@ export default function Row({ data }: RowProps) {
         />
       </td>
       <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8 flex flex-col gap-2 items-start">
-        <Link href={link}>{title}</Link>
+        <Link href={link} target="_blank">
+          {title}
+        </Link>
         <span
           className={twJoin(
             'inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset',
