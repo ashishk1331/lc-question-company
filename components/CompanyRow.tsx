@@ -16,6 +16,11 @@ type RowProps = {
 export default function Row({ company }: RowProps) {
   const ids = useQuestionsStore((state) => state.ids);
   const company_questions_ids = questions[company].map((q) => q.id);
+
+  if (company_questions_ids.length < 2) {
+    return null;
+  }
+
   const done_for_company = company_questions_ids.filter((id) =>
     ids.includes(id),
   );

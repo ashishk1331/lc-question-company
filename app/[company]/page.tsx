@@ -17,8 +17,9 @@ export default async function Page({
 }: {
   params: Promise<{ company: string }>;
 }) {
-  const { company } = await params;
-  const qs = questions[company.replaceAll('%20', ' ')];
+  const { company: companyName } = await params;
+  const company = decodeURI(companyName);
+  const qs = questions[company];
 
   return (
     <div className="px-4 sm:px-6 lg:px-8">
