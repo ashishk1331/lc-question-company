@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 import Row from '@/components/QuestionRow';
 import bank from '@/data/question_bank.json';
-import { Question } from '@/types/types';
+import { type Data } from '@/types/types';
 
-const questions = bank as unknown as Record<string, Question[]>;
+const questions = bank as unknown as Data;
 
 export async function generateStaticParams() {
   return Object.keys(questions).map((company) => ({
@@ -19,7 +19,7 @@ export default async function Page({
 }) {
   const { company: companyName } = await params;
   const company = decodeURI(companyName);
-  const qs = questions[company];
+  const qs = questions[company]['questions'];
 
   return (
     <div className="px-4 sm:px-6 lg:px-8">

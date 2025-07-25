@@ -6,3 +6,5 @@ export type Question = {
   link: string;
   id: string;
 };
+
+export type Data = Record<string, { name: string; questions: Question[]; }>;

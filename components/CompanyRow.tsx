@@ -5,9 +5,9 @@ import { twMerge } from 'tailwind-merge';
 
 import bank from '@/data/question_bank.json';
 import { useQuestionsStore } from '@/store/useQuestionsStore';
-import { Question } from '@/types/types';
+import { type Data } from '@/types/types';
 
-const questions = bank as unknown as Record<string, Question[]>;
+const questions = bank as unknown as Data;
 
 type RowProps = {
   company: string;
@@ -15,7 +15,7 @@ type RowProps = {
 
 export default function Row({ company }: RowProps) {
   const ids = useQuestionsStore((state) => state.ids);
-  const company_questions_ids = questions[company].map((q) => q.id);
+  const company_questions_ids = questions[company]["questions"].map((q) => q.id);
 
   if (company_questions_ids.length < 2) {
     return null;
@@ -42,7 +42,7 @@ export default function Row({ company }: RowProps) {
       {precent > 0 && (
         <span
           className={twMerge(
-            'inline-flex items-center rounded-md bg-indigo-100 px-1.5 py-0.5 text-xs font-medium text-indigo-700',
+            'inline-flex items-center rounded-md bg-indigo-100 px-1.5 py-0.5 text-xs font-medium text-indigo-700 border border-indigo-700',
             precent === 100 && 'bg-green-100 text-green-700',
           )}
         >
