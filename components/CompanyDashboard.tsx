@@ -29,6 +29,22 @@ import {
 import { useQuestionsStore } from '@/store/useQuestionsStore';
 import { type Question } from '@/types/types';
 
+/** The tabs already filter by difficulty, so this orders rather than filters. */
+const SORTS = [
+  { key: 'frequency', label: 'Frequency' },
+  { key: 'difficulty', label: 'Difficulty' },
+  { key: 'acceptance', label: 'Acceptance' },
+  { key: 'title', label: 'Title' },
+] as const;
+
+type SortKey = (typeof SORTS)[number]['key'];
+
+const DIFFICULTY_ORDER: Record<string, number> = {
+  EASY: 0,
+  MEDIUM: 1,
+  HARD: 2,
+};
+
 const TABS = [
   { key: 'ALL', label: 'All' },
   ...DIFFICULTIES.map((difficulty) => ({
@@ -60,6 +76,7 @@ export default function CompanyDashboard({
 }: CompanyDashboardProps) {
   const [tab, setTab] = useState<string>('ALL');
   const [hideSolved, setHideSolved] = useState(false);
+  const [sort, setSort] = useState<SortKey>('frequency');
   const [query, setQuery] = useState('');
 
   const solvedIds = useQuestionsStore((state) => state.ids);
@@ -78,14 +95,31 @@ export default function CompanyDashboard({
 
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return questions.filter((question) => {
+
+    const filtered = questions.filter((question) => {
       if (tab !== 'ALL' && question.difficulty !== tab) return false;
       if (hideSolved && solvedSet.has(question.id)) return false;
       if (needle && !question.title.toLowerCase().includes(needle))
         return false;
       return true;
     });
-  }, [questions, tab, hideSolved, solvedSet, query]);
+
+    // Frequency is the bank's own order and stays the default; the others fall
+    // back to it so equal keys keep a stable, meaningful order.
+    const byFrequency = (a: Question, b: Question) => b.frequency - a.frequency;
+
+    const comparators: Record<SortKey, (a: Question, b: Question) => number> = {
+      frequency: byFrequency,
+      difficulty: (a, b) =>
+        (DIFFICULTY_ORDER[a.difficulty] ?? 99) -
+          (DIFFICULTY_ORDER[b.difficulty] ?? 99) || byFrequency(a, b),
+      acceptance: (a, b) =>
+        b.acceptance_rate - a.acceptance_rate || byFrequency(a, b),
+      title: (a, b) => a.title.localeCompare(b.title),
+    };
+
+    return [...filtered].sort(comparators[sort]);
+  }, [questions, tab, hideSolved, solvedSet, query, sort]);
 
   const dominant = DIFFICULTIES.reduce((best, difficulty) =>
     counts[difficulty] > counts[best] ? difficulty : best,
@@ -203,13 +237,35 @@ export default function CompanyDashboard({
           <Breakdown segments={segments} activeKey={activeKey} />
 
           <section>
-            <div className="flex items-baseline justify-between px-3 pb-1">
+            <div className="flex items-center justify-between gap-3 px-3 pb-1.5">
               <h2 className="text-[13px] font-semibold text-muted">
                 Questions
               </h2>
-              <span className="tnum text-[13px] text-muted-2">
-                {formatCount(visible.length)} shown
-              </span>
+
+              <div className="flex items-center gap-2.5">
+                <label
+                  className="text-[12px] text-muted-2"
+                  htmlFor="question-sort"
+                >
+                  Sort
+                </label>
+                <select
+                  id="question-sort"
+                  value={sort}
+                  onChange={(event) => setSort(event.target.value as SortKey)}
+                  className="cursor-pointer rounded-lg border-0 bg-surface-2 py-1 pl-2.5 pr-7 text-[12px] text-foreground focus:outline-none focus:ring-1 focus:ring-brand"
+                >
+                  {SORTS.map((option) => (
+                    <option key={option.key} value={option.key}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+
+                <span className="tnum shrink-0 text-[13px] text-muted-2">
+                  {formatCount(visible.length)} shown
+                </span>
+              </div>
             </div>
 
             {visible.length === 0 ? (

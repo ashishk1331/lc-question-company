@@ -3,7 +3,12 @@
 import Link from 'next/link';
 import { twJoin } from 'tailwind-merge';
 
-import { type RelatedCompany, formatCount, percentOf } from '@/lib/stats';
+import {
+  type RelatedCompany,
+  formatCount,
+  matchTone,
+  percentOf,
+} from '@/lib/stats';
 import { useQuestionsStore } from '@/store/useQuestionsStore';
 
 type RelatedCompaniesProps = {
@@ -26,6 +31,13 @@ export default function RelatedCompanies({
   const solved = new Set(hydrated ? solvedIds : []);
 
   if (items.length === 0) return null;
+
+  // The six are picked by Jaccard, but the number on the card is share of that
+  // company's list — so order by what is displayed, or the column reads as
+  // unsorted (41%, 45%, 38%...).
+  const ordered = [...items].sort(
+    (a, b) => b.shared / b.total - a.shared / a.total,
+  );
 
   return (
     <section>
@@ -51,9 +63,10 @@ export default function RelatedCompanies({
           complete && 'ring-1 ring-brand/40',
         )}
       >
-        {items.map((item) => {
+        {ordered.map((item) => {
           const done = item.ids.filter((id) => solved.has(id)).length;
           const headStart = percentOf(done, item.total);
+          const match = percentOf(item.shared, item.total);
 
           return (
             <Link
@@ -68,9 +81,20 @@ export default function RelatedCompanies({
                 </span>
               </div>
 
-              <p className="tnum pt-2 text-[12px] text-muted-2">
-                <span className="text-muted">{formatCount(item.shared)}</span>{' '}
-                shared of {formatCount(item.total)}
+              <p
+                className="tnum flex items-baseline justify-between gap-2 pt-2 text-[12px] text-muted-2"
+                title={`${item.shared} of ${item.name}'s ${item.total} questions are also asked at ${companyName}`}
+              >
+                <span>
+                  <span className="text-muted">{formatCount(item.shared)}</span>{' '}
+                  shared of {formatCount(item.total)}
+                </span>
+                <span
+                  className="shrink-0 font-medium"
+                  style={{ color: matchTone(match) }}
+                >
+                  {Math.round(match)}%
+                </span>
               </p>
 
               <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-chip">

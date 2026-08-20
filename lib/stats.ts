@@ -118,3 +118,18 @@ export type RelatedCompany = {
   ids: string[];
   hasIcon: boolean;
 };
+
+/**
+ * Colour ramp for a match percentage. Thresholds sit on the real distribution
+ * of the 768 related pairs (median 20%, p75 30%), so the three tones actually
+ * split the data instead of leaving one bucket empty.
+ *
+ * Deliberately violet/blue rather than the difficulty or progress colours —
+ * a green here would read as "solved" next to the head-start bar, and
+ * teal/amber/coral read as Easy/Medium/Hard everywhere else in the app.
+ */
+export function matchTone(percent: number) {
+  if (percent >= 35) return '#a78bfa';
+  if (percent >= 20) return '#6e8af8';
+  return 'var(--muted)';
+}
