@@ -2,7 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import { twJoin } from 'tailwind-merge';
 
+import Dropdown from '@/components/Dropdown';
 import { ChevronUpDownIcon, LogoMark, SearchIcon } from '@/components/icons';
 
 export type CompanyOption = { key: string; name: string; hasIcon: boolean };
@@ -47,47 +49,47 @@ export default function AppHeader({
           LC Company Questions
         </span>
 
-        <div className="relative flex min-w-0 flex-1 items-center lg:flex-none">
-          <div className="flex min-w-0 items-center gap-2 rounded-full bg-surface-2 py-2 pl-2.5 pr-3">
-            {currentGlyph ?? (
-              <LogoMark className="size-5 shrink-0 opacity-70" />
-            )}
-            <span className="truncate text-[15px] text-foreground lg:max-w-[200px]">
-              {currentCompany?.name ?? 'All Companies'}
+        <Dropdown
+          label="Switch company"
+          value={currentCompany?.key ?? ''}
+          options={[
+            { value: '', label: 'All Companies' },
+            ...companies.map((company) => ({
+              value: company.key,
+              label: company.name,
+            })),
+          ]}
+          onChange={(next) => router.push(next ? `/${next}` : '/')}
+          filterable
+          className="min-w-0 flex-1 lg:flex-none"
+          menuClassName="w-64"
+          renderTrigger={(selected, open) => (
+            <span
+              className={twJoin(
+                'flex min-w-0 items-center gap-2 rounded-full bg-surface-2 py-2 pl-2.5 pr-3 transition-colors hover:bg-chip',
+                open && 'ring-1 ring-brand',
+              )}
+            >
+              {currentGlyph ?? (
+                <LogoMark className="size-5 shrink-0 opacity-70" />
+              )}
+              <span className="truncate text-[15px] text-foreground lg:max-w-[200px]">
+                {selected?.label ?? 'All Companies'}
+              </span>
+              <ChevronUpDownIcon className="size-3.5 shrink-0 text-muted" />
             </span>
-            <ChevronUpDownIcon className="size-3.5 shrink-0 text-muted" />
-          </div>
-
-          <label className="sr-only" htmlFor="company-switcher">
-            Switch company
-          </label>
-          <select
-            id="company-switcher"
-            value={currentCompany?.key ?? ''}
-            onChange={(event) => {
-              const next = event.target.value;
-              router.push(next ? `/${next}` : '/');
-            }}
-            className="absolute inset-y-0 left-0 w-full max-w-[240px] cursor-pointer appearance-none border-0 bg-transparent p-0 text-transparent opacity-0 focus:outline-none focus:ring-0"
-          >
-            <option value="">All Companies</option>
-            {companies.map((company) => (
-              <option key={company.key} value={company.key}>
-                {company.name}
-              </option>
-            ))}
-          </select>
-        </div>
+          )}
+        />
 
         {/* Desktop keeps the field open; there is room for it. */}
-        <div className="relative ml-auto hidden lg:block lg:w-72">
-          <SearchIcon className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-2" />
+        <div className="ml-auto hidden items-center gap-2.5 rounded-full bg-surface-2 px-4 py-2 focus-within:ring-1 focus-within:ring-brand lg:flex lg:w-72">
+          <SearchIcon className="size-4 shrink-0 text-muted-2" />
           <input
             type="search"
             value={searchValue}
             onChange={(event) => onSearchChange(event.target.value)}
             placeholder={searchPlaceholder}
-            className="w-full rounded-full border-0 bg-surface-2 py-2 pl-9 pr-4 text-[13px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-1 focus:ring-brand"
+            className="min-w-0 flex-1 border-0 bg-transparent p-0 text-[13px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-0"
           />
         </div>
 
@@ -103,7 +105,8 @@ export default function AppHeader({
       </div>
 
       {searchOpen && (
-        <div className="mt-3 lg:hidden">
+        <div className="mt-3 flex items-center gap-2.5 rounded-full bg-surface-2 px-4 py-2.5 focus-within:ring-1 focus-within:ring-brand lg:hidden">
+          <SearchIcon className="size-4 shrink-0 text-muted-2" />
           <input
             ref={inputRef}
             type="search"
@@ -113,7 +116,7 @@ export default function AppHeader({
               if (event.key === 'Escape') closeSearch();
             }}
             placeholder={searchPlaceholder}
-            className="w-full rounded-full border-0 bg-surface-2 px-4 py-2.5 text-[15px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-1 focus:ring-brand"
+            className="min-w-0 flex-1 border-0 bg-transparent p-0 text-[15px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-0"
           />
         </div>
       )}

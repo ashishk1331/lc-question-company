@@ -52,16 +52,18 @@ export default function CompanyDirectory({
       </div>
 
       {withFilter && (
-        <div className="relative hidden lg:block lg:px-2.5 lg:pb-2.5">
-          <SearchIcon className="pointer-events-none absolute left-5 top-1/2 size-4 -translate-y-1/2 text-muted-2" />
-          <input
-            type="search"
-            value={ownQuery}
-            onChange={(event) => setOwnQuery(event.target.value)}
-            placeholder="Filter companies"
-            aria-label="Filter companies"
-            className="w-full rounded-lg border-0 bg-surface-2 py-2 pl-9 pr-3 text-[13px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-1 focus:ring-brand"
-          />
+        <div className="hidden lg:block lg:px-2.5 lg:pb-3">
+          <div className="flex items-center gap-2 rounded-lg bg-surface-2 px-2.5 py-2 focus-within:ring-1 focus-within:ring-brand">
+            <SearchIcon className="size-4 shrink-0 text-muted-2" />
+            <input
+              type="search"
+              value={ownQuery}
+              onChange={(event) => setOwnQuery(event.target.value)}
+              placeholder="Filter companies"
+              aria-label="Filter companies"
+              className="min-w-0 flex-1 border-0 bg-transparent p-0 text-[13px] text-foreground placeholder:text-muted-2 focus:outline-none focus:ring-0"
+            />
+          </div>
         </div>
       )}
 

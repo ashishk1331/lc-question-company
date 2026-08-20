@@ -10,6 +10,7 @@ import Breakdown from '@/components/Breakdown';
 import CompanyDirectory from '@/components/CompanyDirectory';
 import DashboardShell from '@/components/DashboardShell';
 import Description, { Keyword, Strong } from '@/components/Description';
+import Dropdown from '@/components/Dropdown';
 import QuestionRow from '@/components/QuestionRow';
 import RelatedCompanies from '@/components/RelatedCompanies';
 import StatStrip from '@/components/StatStrip';
@@ -243,24 +244,18 @@ export default function CompanyDashboard({
               </h2>
 
               <div className="flex items-center gap-2.5">
-                <label
-                  className="text-[12px] text-muted-2"
-                  htmlFor="question-sort"
-                >
-                  Sort
-                </label>
-                <select
-                  id="question-sort"
+                <span className="text-[12px] text-muted-2">Sort</span>
+                <Dropdown
+                  label="Sort questions"
                   value={sort}
-                  onChange={(event) => setSort(event.target.value as SortKey)}
-                  className="cursor-pointer rounded-lg border-0 bg-surface-2 py-1 pl-2.5 pr-7 text-[12px] text-foreground focus:outline-none focus:ring-1 focus:ring-brand"
-                >
-                  {SORTS.map((option) => (
-                    <option key={option.key} value={option.key}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
+                  options={SORTS.map((option) => ({
+                    value: option.key,
+                    label: option.label,
+                  }))}
+                  onChange={(next) => setSort(next as SortKey)}
+                  align="end"
+                  menuClassName="w-44"
+                />
 
                 <span className="tnum shrink-0 text-[13px] text-muted-2">
                   {formatCount(visible.length)} shown

@@ -40,7 +40,9 @@ export default function RelatedCompanies({
   );
 
   return (
-    <section>
+    // Extra top space here only: this is a hand-off away from the current
+    // company, so it wants separating from the question list above it.
+    <section className="pt-8 lg:pt-14">
       <div className="flex items-baseline justify-between gap-3 px-1 pb-2.5">
         <h2
           className={twJoin(
