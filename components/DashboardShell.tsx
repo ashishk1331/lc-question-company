@@ -22,7 +22,7 @@ export default function DashboardShell({
         {children}
       </main>
       <aside
-        className={`order-2 lg:sticky lg:order-1 lg:top-[var(--header-h)] lg:h-[calc(100dvh-var(--header-h))] lg:border-r lg:border-hairline lg:pr-6 lg:pt-6 ${sidebarOnMobile ? '' : 'hidden lg:block'}`}
+        className={`order-2 lg:sticky lg:top-[var(--header-h)] lg:order-1 lg:h-[calc(100dvh-var(--header-h))] lg:border-r lg:border-hairline lg:pr-6 lg:pt-6 ${sidebarOnMobile ? '' : 'hidden lg:block'}`}
       >
         {sidebar}
       </aside>

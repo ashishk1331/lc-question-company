@@ -8,30 +8,35 @@
  *   bun run icons
  */
 import { writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-
+import { fileURLToPath } from 'node:url';
 import * as simpleIcons from 'simple-icons';
 
-import bank from '../data/question_bank.json' with { type: 'json' };
-import triggerIcons from '../data/companiesWithIcons.json' with { type: 'json' };
+import triggerIcons from '../data/companiesWithIcons.json';
+import rawBank from '../data/question_bank.json';
+import { type Data } from '../types/types';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+const bank = rawBank as unknown as Data;
 
 /**
  * Company names whose simple-icons title differs from our display name.
  * Only genuine identities belong here — a near-miss would render another
  * company's mark (Epic Systems is healthcare software, not Epic Games).
  */
-const ALIASES = {
+const ALIASES: Record<string, string> = {
   Snap: 'Snapchat',
   Block: 'Square', // Block was Square until 2021
   tcs: 'Tata Consultancy Services',
 };
 
-const normalise = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, '');
+const normalise = (value: string) =>
+  value.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-const byTitle = new Map();
+type SimpleIcon = { title: string; hex: string; path: string; slug?: string };
+
+const byTitle = new Map<string, SimpleIcon>();
 for (const icon of Object.values(simpleIcons)) {
   if (icon && typeof icon === 'object' && icon.title && icon.path) {
     byTitle.set(normalise(icon.title), icon);
@@ -39,15 +44,19 @@ for (const icon of Object.values(simpleIcons)) {
 }
 
 const companies = Object.keys(bank).filter((key) => bank[key].questions.length);
-const icons = {};
-const matched = [];
-const missing = [];
+const icons: Record<string, { title: string; hex: string; path: string }> = {};
+const matched: string[] = [];
+const missing: string[] = [];
 
 for (const key of companies) {
   const name = bank[key].name;
-  const candidates = [ALIASES[name], name, name.replace(/\s+(Labs|Systems|Technologies|Group)$/i, '')];
+  const candidates = [
+    ALIASES[name],
+    name,
+    name.replace(/\s+(Labs|Systems|Technologies|Group)$/i, ''),
+  ];
 
-  let icon = null;
+  let icon: SimpleIcon | undefined;
   for (const candidate of candidates) {
     if (!candidate) continue;
     icon = byTitle.get(normalise(candidate));
@@ -75,7 +84,9 @@ const initials = companies.filter((key) => !covered.has(key));
 console.log(`simple-icons available  : ${byTitle.size}`);
 console.log(`companies with questions: ${companies.length}`);
 console.log(`matched by simple-icons : ${matched.length}`);
-console.log(`only from @trigger.dev  : ${fromTrigger.filter((k) => !icons[k]).length}`);
+console.log(
+  `only from @trigger.dev  : ${fromTrigger.filter((k) => !icons[k]).length}`,
+);
 console.log(`total with a real logo  : ${covered.size} / ${companies.length}`);
 console.log(`\nstill using initials (${initials.length}):`);
 console.log('  ' + initials.map((k) => bank[k].name).join(', '));

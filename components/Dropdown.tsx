@@ -55,6 +55,14 @@ export default function Dropdown({
     );
   }, [options, query]);
 
+  function openMenu() {
+    // Start keyboard movement on the current selection. Done here rather than
+    // in an effect: setState inside an effect body causes a cascading render.
+    const index = options.findIndex((option) => option.value === value);
+    setActiveIndex(index >= 0 ? index : 0);
+    setOpen(true);
+  }
+
   function close(refocus = true) {
     setOpen(false);
     setQuery('');
@@ -66,13 +74,9 @@ export default function Dropdown({
     close();
   }
 
-  // Open onto the current selection so keyboard movement starts somewhere sane.
   useEffect(() => {
-    if (!open) return;
-    const index = visible.findIndex((option) => option.value === value);
-    setActiveIndex(index >= 0 ? index : 0);
-    if (filterable) filterRef.current?.focus();
-  }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (open && filterable) filterRef.current?.focus();
+  }, [open, filterable]);
 
   useEffect(() => {
     if (!open) return;
@@ -94,7 +98,7 @@ export default function Dropdown({
     if (!open) {
       if (['Enter', ' ', 'ArrowDown', 'ArrowUp'].includes(event.key)) {
         event.preventDefault();
-        setOpen(true);
+        openMenu();
       }
       return;
     }
@@ -141,7 +145,7 @@ export default function Dropdown({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={label}
-        onClick={() => (open ? close(false) : setOpen(true))}
+        onClick={() => (open ? close(false) : openMenu())}
         className="w-full text-left"
       >
         {renderTrigger ? (

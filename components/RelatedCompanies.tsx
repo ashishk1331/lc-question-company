@@ -62,7 +62,7 @@ export default function RelatedCompanies({
       <div
         className={twJoin(
           'panel grid grid-cols-2 gap-px lg:grid-cols-3',
-          complete && 'ring-1 ring-brand/40',
+          complete && 'ring-brand/40 ring-1',
         )}
       >
         {ordered.map((item) => {

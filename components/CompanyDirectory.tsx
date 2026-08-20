@@ -79,7 +79,7 @@ export default function CompanyDirectory({
 
         {groups.map(([letter, items]) => (
           <div key={letter}>
-            <h3 className="sticky top-0 z-10 bg-background/90 px-3 py-2 text-[13px] font-semibold text-muted backdrop-blur lg:bg-background lg:px-2.5 lg:py-1.5 lg:text-[11px] lg:backdrop-blur-none">
+            <h3 className="bg-background/90 sticky top-0 z-10 px-3 py-2 text-[13px] font-semibold text-muted backdrop-blur lg:bg-background lg:px-2.5 lg:py-1.5 lg:text-[11px] lg:backdrop-blur-none">
               {letter}
             </h3>
             <ul className="divide-y divide-hairline lg:divide-y-0">

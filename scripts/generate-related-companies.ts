@@ -15,42 +15,49 @@
  *   bun run related
  */
 import { writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import bank from '../data/question_bank.json' with { type: 'json' };
+import rawBank from '../data/question_bank.json';
+import { type Data } from '../types/types';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+const bank = rawBank as unknown as Data;
 const TOP_N = 6;
 
-const keys = Object.keys(bank).filter((key) => bank[key].questions.length > 0);
-const sets = new Map(
-  keys.map((key) => [key, new Set(bank[key].questions.map((q) => q.id))]),
-);
+// A flat list rather than a Map keyed by name: every lookup below is over the
+// same set, so carrying the ids alongside avoids nullable `.get()` results.
+const companies = Object.keys(bank)
+  .filter((key) => bank[key].questions.length > 0)
+  .map((key) => ({
+    key,
+    name: bank[key].name,
+    ids: new Set(bank[key].questions.map((question) => question.id)),
+  }));
 
-function intersectionSize(a, b) {
+function intersectionSize(a: Set<string>, b: Set<string>) {
   const [small, large] = a.size <= b.size ? [a, b] : [b, a];
   let count = 0;
   for (const id of small) if (large.has(id)) count += 1;
   return count;
 }
 
-const related = {};
+type Entry = { key: string; shared: number; total: number; score: number };
 
-for (const key of keys) {
-  const source = sets.get(key);
+const related: Record<string, Entry[]> = {};
 
-  const ranked = keys
-    .filter((other) => other !== key)
+for (const source of companies) {
+  const ranked = companies
+    .filter((other) => other.key !== source.key)
     .map((other) => {
-      const target = sets.get(other);
-      const shared = intersectionSize(source, target);
-      const union = source.size + target.size - shared;
+      const shared = intersectionSize(source.ids, other.ids);
+      const union = source.ids.size + other.ids.size - shared;
       return {
-        key: other,
-        name: bank[other].name,
+        key: other.key,
+        name: other.name,
         shared,
-        total: target.size,
+        total: other.ids.size,
         score: union > 0 ? shared / union : 0,
       };
     })
@@ -59,7 +66,9 @@ for (const key of keys) {
     // deterministically or the output churns between runs.
     .sort(
       (a, b) =>
-        b.score - a.score || b.shared - a.shared || a.name.localeCompare(b.name),
+        b.score - a.score ||
+        b.shared - a.shared ||
+        a.name.localeCompare(b.name),
     )
     .slice(0, TOP_N)
     .map(({ key: k, shared, total, score }) => ({
@@ -69,7 +78,7 @@ for (const key of keys) {
       score: Number(score.toFixed(4)),
     }));
 
-  if (ranked.length) related[key] = ranked;
+  if (ranked.length) related[source.key] = ranked;
 }
 
 writeFileSync(
@@ -78,13 +87,15 @@ writeFileSync(
 );
 
 const sizes = Object.values(related).map((r) => r.length);
-console.log(`companies with questions : ${keys.length}`);
+console.log(`companies with questions : ${companies.length}`);
 console.log(`companies with matches   : ${Object.keys(related).length}`);
 console.log(`min matches for a company: ${Math.min(...sizes)}`);
 for (const sample of ['google', 'paypal', 'accolite']) {
   if (!related[sample]) continue;
   console.log(`\n${bank[sample].name}:`);
   for (const r of related[sample]) {
-    console.log(`  ${bank[r.key].name.padEnd(20)} ${String(r.shared).padStart(3)} shared of ${r.total}  (score ${r.score})`);
+    console.log(
+      `  ${bank[r.key].name.padEnd(20)} ${String(r.shared).padStart(3)} shared of ${r.total}  (score ${r.score})`,
+    );
   }
 }
