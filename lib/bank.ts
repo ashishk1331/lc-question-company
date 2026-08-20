@@ -1,7 +1,13 @@
 import companiesWithIcons from '@/data/companiesWithIcons.json';
 import bank from '@/data/question_bank.json';
+import relatedCompanies from '@/data/relatedCompanies.json';
 import { brandIcon } from '@/lib/icons';
-import { DIFFICULTIES, type Difficulty, countByDifficulty } from '@/lib/stats';
+import {
+  DIFFICULTIES,
+  type Difficulty,
+  type RelatedCompany,
+  countByDifficulty,
+} from '@/lib/stats';
 import { type Data } from '@/types/types';
 
 export const questions = bank as unknown as Data;
@@ -77,4 +83,24 @@ export function companyIndex() {
     total: company.total,
     hasIcon: company.hasIcon,
   }));
+}
+
+const related = relatedCompanies as Record<
+  string,
+  { key: string; shared: number; total: number; score: number }[]
+>;
+
+/**
+ * Top overlapping companies for a company page. Ids are attached here rather
+ * than stored in the JSON — the bank is already loaded server-side.
+ */
+export function relatedFor(companyKey: string): RelatedCompany[] {
+  return (related[companyKey] ?? [])
+    .filter((entry) => questions[entry.key])
+    .map((entry) => ({
+      ...entry,
+      name: questions[entry.key].name,
+      ids: questions[entry.key].questions.map((question) => question.id),
+      hasIcon: hasIcon(entry.key),
+    }));
 }

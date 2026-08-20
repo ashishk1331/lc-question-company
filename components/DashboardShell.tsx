@@ -4,9 +4,16 @@
  */
 export default function DashboardShell({
   sidebar,
+  sidebarOnMobile = true,
   children,
 }: {
   sidebar: React.ReactNode;
+  /**
+   * Company pages suppress it: a 128-entry directory under the question list
+   * competes with the related-companies jump-off, and the switcher already
+   * covers navigation there.
+   */
+  sidebarOnMobile?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -14,7 +21,9 @@ export default function DashboardShell({
       <main className="order-1 min-w-0 lg:order-2 lg:pb-12 lg:pl-8 lg:pt-6">
         {children}
       </main>
-      <aside className="order-2 lg:sticky lg:order-1 lg:top-[var(--header-h)] lg:h-[calc(100dvh-var(--header-h))] lg:border-r lg:border-hairline lg:pr-6 lg:pt-6">
+      <aside
+        className={`order-2 lg:sticky lg:order-1 lg:top-[var(--header-h)] lg:h-[calc(100dvh-var(--header-h))] lg:border-r lg:border-hairline lg:pr-6 lg:pt-6 ${sidebarOnMobile ? '' : 'hidden lg:block'}`}
+      >
         {sidebar}
       </aside>
     </div>

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "icons": "node scripts/generate-company-icons.mjs"
+    "icons": "node scripts/generate-company-icons.mjs",
+    "related": "node scripts/generate-related-companies.mjs"
   },
   "dependencies": {
     "@trigger.dev/companyicons": "^1.5.44",

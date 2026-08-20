@@ -1,0 +1,4866 @@
+{
+  "accolite": [
+    {
+      "key": "vmware",
+      "shared": 6,
+      "total": 24,
+      "score": 0.1714
+    },
+    {
+      "key": "deloitte",
+      "shared": 5,
+      "total": 20,
+      "score": 0.1563
+    },
+    {
+      "key": "intel",
+      "shared": 5,
+      "total": 20,
+      "score": 0.1563
+    },
+    {
+      "key": "epam-systems",
+      "shared": 7,
+      "total": 40,
+      "score": 0.14
+    },
+    {
+      "key": "turing",
+      "shared": 6,
+      "total": 35,
+      "score": 0.1304
+    },
+    {
+      "key": "sap",
+      "shared": 6,
+      "total": 37,
+      "score": 0.125
+    }
+  ],
+  "adobe": [
+    {
+      "key": "microsoft",
+      "shared": 98,
+      "total": 100,
+      "score": 0.9608
+    },
+    {
+      "key": "apple",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "amazon",
+      "shared": 95,
+      "total": 100,
+      "score": 0.9048
+    },
+    {
+      "key": "meta",
+      "shared": 94,
+      "total": 100,
+      "score": 0.8868
+    },
+    {
+      "key": "uber",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "yahoo",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    }
+  ],
+  "agoda": [
+    {
+      "key": "servicenow",
+      "shared": 15,
+      "total": 76,
+      "score": 0.15
+    },
+    {
+      "key": "salesforce",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1488
+    },
+    {
+      "key": "bytedance",
+      "shared": 12,
+      "total": 58,
+      "score": 0.1412
+    },
+    {
+      "key": "expedia",
+      "shared": 11,
+      "total": 50,
+      "score": 0.141
+    },
+    {
+      "key": "paypal",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1393
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1393
+    }
+  ],
+  "accenture": [
+    {
+      "key": "tcs",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    },
+    {
+      "key": "infosys",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2121
+    },
+    {
+      "key": "yahoo",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2121
+    },
+    {
+      "key": "zoho",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2121
+    },
+    {
+      "key": "uber",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    }
+  ],
+  "airbnb": [
+    {
+      "key": "bytedance",
+      "shared": 11,
+      "total": 58,
+      "score": 0.1078
+    },
+    {
+      "key": "nvidia",
+      "shared": 15,
+      "total": 100,
+      "score": 0.1071
+    },
+    {
+      "key": "snowflake",
+      "shared": 11,
+      "total": 72,
+      "score": 0.0948
+    },
+    {
+      "key": "capital-one",
+      "shared": 8,
+      "total": 38,
+      "score": 0.0941
+    },
+    {
+      "key": "x",
+      "shared": 9,
+      "total": 50,
+      "score": 0.0938
+    },
+    {
+      "key": "yandex",
+      "shared": 13,
+      "total": 100,
+      "score": 0.0915
+    }
+  ],
+  "akuna-capital": [
+    {
+      "key": "ozon",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0541
+    },
+    {
+      "key": "disney",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0526
+    },
+    {
+      "key": "huawei",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0526
+    },
+    {
+      "key": "zeta",
+      "shared": 2,
+      "total": 15,
+      "score": 0.0513
+    },
+    {
+      "key": "cisco",
+      "shared": 5,
+      "total": 77,
+      "score": 0.051
+    },
+    {
+      "key": "sap",
+      "shared": 3,
+      "total": 37,
+      "score": 0.05
+    }
+  ],
+  "amazon": [
+    {
+      "key": "apple",
+      "shared": 98,
+      "total": 100,
+      "score": 0.9608
+    },
+    {
+      "key": "microsoft",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "adobe",
+      "shared": 95,
+      "total": 100,
+      "score": 0.9048
+    },
+    {
+      "key": "meta",
+      "shared": 90,
+      "total": 100,
+      "score": 0.8182
+    },
+    {
+      "key": "uber",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "yahoo",
+      "shared": 85,
+      "total": 100,
+      "score": 0.7391
+    }
+  ],
+  "anduril": [
+    {
+      "key": "ixl",
+      "shared": 4,
+      "total": 16,
+      "score": 0.1176
+    },
+    {
+      "key": "coupang",
+      "shared": 5,
+      "total": 36,
+      "score": 0.0943
+    },
+    {
+      "key": "tesla",
+      "shared": 6,
+      "total": 48,
+      "score": 0.0938
+    },
+    {
+      "key": "snowflake",
+      "shared": 8,
+      "total": 72,
+      "score": 0.093
+    },
+    {
+      "key": "karat",
+      "shared": 3,
+      "total": 14,
+      "score": 0.0909
+    },
+    {
+      "key": "nvidia",
+      "shared": 10,
+      "total": 100,
+      "score": 0.0893
+    }
+  ],
+  "apple": [
+    {
+      "key": "amazon",
+      "shared": 98,
+      "total": 100,
+      "score": 0.9608
+    },
+    {
+      "key": "adobe",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "microsoft",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "meta",
+      "shared": 91,
+      "total": 100,
+      "score": 0.8349
+    },
+    {
+      "key": "uber",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "yahoo",
+      "shared": 86,
+      "total": 100,
+      "score": 0.7544
+    }
+  ],
+  "arcesium": [
+    {
+      "key": "vmware",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1163
+    },
+    {
+      "key": "epam-systems",
+      "shared": 6,
+      "total": 40,
+      "score": 0.1034
+    },
+    {
+      "key": "accolite",
+      "shared": 3,
+      "total": 17,
+      "score": 0.0789
+    },
+    {
+      "key": "flipkart",
+      "shared": 9,
+      "total": 100,
+      "score": 0.0783
+    },
+    {
+      "key": "phonepe",
+      "shared": 7,
+      "total": 78,
+      "score": 0.0737
+    },
+    {
+      "key": "de-shaw",
+      "shared": 8,
+      "total": 100,
+      "score": 0.069
+    }
+  ],
+  "arista-networks": [
+    {
+      "key": "intel",
+      "shared": 5,
+      "total": 20,
+      "score": 0.1087
+    },
+    {
+      "key": "yandex",
+      "shared": 12,
+      "total": 100,
+      "score": 0.1008
+    },
+    {
+      "key": "vmware",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1
+    },
+    {
+      "key": "tesla",
+      "shared": 6,
+      "total": 48,
+      "score": 0.0822
+    },
+    {
+      "key": "epam-systems",
+      "shared": 5,
+      "total": 40,
+      "score": 0.0758
+    },
+    {
+      "key": "palantir-technologies",
+      "shared": 4,
+      "total": 27,
+      "score": 0.0741
+    }
+  ],
+  "atlassian": [
+    {
+      "key": "agoda",
+      "shared": 11,
+      "total": 39,
+      "score": 0.1209
+    },
+    {
+      "key": "accenture",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1164
+    },
+    {
+      "key": "paypal",
+      "shared": 16,
+      "total": 100,
+      "score": 0.1088
+    },
+    {
+      "key": "zoho",
+      "shared": 16,
+      "total": 100,
+      "score": 0.1088
+    },
+    {
+      "key": "servicenow",
+      "shared": 13,
+      "total": 76,
+      "score": 0.1032
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 15,
+      "total": 100,
+      "score": 0.1014
+    }
+  ],
+  "autodesk": [
+    {
+      "key": "mongodb",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1154
+    },
+    {
+      "key": "consultadd",
+      "shared": 2,
+      "total": 11,
+      "score": 0.08
+    },
+    {
+      "key": "nutanix",
+      "shared": 4,
+      "total": 43,
+      "score": 0.0727
+    },
+    {
+      "key": "disney",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0714
+    },
+    {
+      "key": "blackrock",
+      "shared": 2,
+      "total": 15,
+      "score": 0.069
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 7,
+      "total": 100,
+      "score": 0.0642
+    }
+  ],
+  "barclays": [
+    {
+      "key": "cognizant",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1212
+    },
+    {
+      "key": "deloitte",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1212
+    },
+    {
+      "key": "ozon",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1111
+    },
+    {
+      "key": "siemens",
+      "shared": 4,
+      "total": 24,
+      "score": 0.1081
+    },
+    {
+      "key": "wipro",
+      "shared": 4,
+      "total": 24,
+      "score": 0.1081
+    },
+    {
+      "key": "huawei",
+      "shared": 3,
+      "total": 14,
+      "score": 0.1071
+    }
+  ],
+  "blackrock": [
+    {
+      "key": "consultadd",
+      "shared": 3,
+      "total": 11,
+      "score": 0.1304
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.1154
+    },
+    {
+      "key": "epam-systems",
+      "shared": 5,
+      "total": 40,
+      "score": 0.1
+    },
+    {
+      "key": "cognizant",
+      "shared": 3,
+      "total": 20,
+      "score": 0.0938
+    },
+    {
+      "key": "bny-mellon",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0909
+    },
+    {
+      "key": "tesla",
+      "shared": 5,
+      "total": 48,
+      "score": 0.0862
+    }
+  ],
+  "block": [
+    {
+      "key": "pinterest",
+      "shared": 5,
+      "total": 45,
+      "score": 0.0893
+    },
+    {
+      "key": "grammarly",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0811
+    },
+    {
+      "key": "bookingcom",
+      "shared": 2,
+      "total": 17,
+      "score": 0.0645
+    },
+    {
+      "key": "dropbox",
+      "shared": 2,
+      "total": 23,
+      "score": 0.0541
+    },
+    {
+      "key": "nutanix",
+      "shared": 3,
+      "total": 43,
+      "score": 0.0536
+    },
+    {
+      "key": "palantir-technologies",
+      "shared": 2,
+      "total": 27,
+      "score": 0.0488
+    }
+  ],
+  "bny-mellon": [
+    {
+      "key": "epam-systems",
+      "shared": 7,
+      "total": 40,
+      "score": 0.1296
+    },
+    {
+      "key": "agoda",
+      "shared": 6,
+      "total": 39,
+      "score": 0.1111
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1081
+    },
+    {
+      "key": "nutanix",
+      "shared": 6,
+      "total": 43,
+      "score": 0.1034
+    },
+    {
+      "key": "grab",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1
+    },
+    {
+      "key": "zopsmart",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1
+    }
+  ],
+  "bookingcom": [
+    {
+      "key": "zenefits",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0857
+    },
+    {
+      "key": "ozon",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0714
+    },
+    {
+      "key": "disney",
+      "shared": 2,
+      "total": 14,
+      "score": 0.069
+    },
+    {
+      "key": "huawei",
+      "shared": 2,
+      "total": 14,
+      "score": 0.069
+    },
+    {
+      "key": "karat",
+      "shared": 2,
+      "total": 14,
+      "score": 0.069
+    },
+    {
+      "key": "block",
+      "shared": 2,
+      "total": 16,
+      "score": 0.0645
+    }
+  ],
+  "bytedance": [
+    {
+      "key": "oracle",
+      "shared": 27,
+      "total": 100,
+      "score": 0.2061
+    },
+    {
+      "key": "servicenow",
+      "shared": 22,
+      "total": 76,
+      "score": 0.1964
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 25,
+      "total": 100,
+      "score": 0.188
+    },
+    {
+      "key": "ebay",
+      "shared": 20,
+      "total": 73,
+      "score": 0.1802
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1791
+    },
+    {
+      "key": "salesforce",
+      "shared": 23,
+      "total": 100,
+      "score": 0.1704
+    }
+  ],
+  "capital-one": [
+    {
+      "key": "visa",
+      "shared": 16,
+      "total": 67,
+      "score": 0.1798
+    },
+    {
+      "key": "roblox",
+      "shared": 12,
+      "total": 44,
+      "score": 0.1714
+    },
+    {
+      "key": "intel",
+      "shared": 8,
+      "total": 20,
+      "score": 0.16
+    },
+    {
+      "key": "zoho",
+      "shared": 15,
+      "total": 100,
+      "score": 0.122
+    },
+    {
+      "key": "netflix",
+      "shared": 7,
+      "total": 31,
+      "score": 0.1129
+    },
+    {
+      "key": "coinbase",
+      "shared": 5,
+      "total": 12,
+      "score": 0.1111
+    }
+  ],
+  "cisco": [
+    {
+      "key": "goldman-sachs",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2378
+    },
+    {
+      "key": "oracle",
+      "shared": 31,
+      "total": 100,
+      "score": 0.2123
+    },
+    {
+      "key": "yandex",
+      "shared": 31,
+      "total": 100,
+      "score": 0.2123
+    },
+    {
+      "key": "zoho",
+      "shared": 31,
+      "total": 100,
+      "score": 0.2123
+    },
+    {
+      "key": "infosys",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1959
+    },
+    {
+      "key": "nvidia",
+      "shared": 28,
+      "total": 100,
+      "score": 0.1879
+    }
+  ],
+  "citadel": [
+    {
+      "key": "goldman-sachs",
+      "shared": 32,
+      "total": 100,
+      "score": 0.1905
+    },
+    {
+      "key": "salesforce",
+      "shared": 30,
+      "total": 100,
+      "score": 0.1765
+    },
+    {
+      "key": "oracle",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1696
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1696
+    },
+    {
+      "key": "bytedance",
+      "shared": 22,
+      "total": 58,
+      "score": 0.1618
+    },
+    {
+      "key": "uber",
+      "shared": 27,
+      "total": 100,
+      "score": 0.1561
+    }
+  ],
+  "cognizant": [
+    {
+      "key": "deloitte",
+      "shared": 8,
+      "total": 20,
+      "score": 0.25
+    },
+    {
+      "key": "epam-systems",
+      "shared": 10,
+      "total": 40,
+      "score": 0.2
+    },
+    {
+      "key": "intel",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1765
+    },
+    {
+      "key": "siemens",
+      "shared": 6,
+      "total": 24,
+      "score": 0.1579
+    },
+    {
+      "key": "wipro",
+      "shared": 6,
+      "total": 24,
+      "score": 0.1579
+    },
+    {
+      "key": "huawei",
+      "shared": 4,
+      "total": 14,
+      "score": 0.1333
+    }
+  ],
+  "coinbase": [
+    {
+      "key": "capital-one",
+      "shared": 5,
+      "total": 38,
+      "score": 0.1111
+    },
+    {
+      "key": "robinhood",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0909
+    },
+    {
+      "key": "rippling",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0833
+    },
+    {
+      "key": "databricks",
+      "shared": 3,
+      "total": 35,
+      "score": 0.0682
+    },
+    {
+      "key": "airbnb",
+      "shared": 4,
+      "total": 55,
+      "score": 0.0635
+    },
+    {
+      "key": "netflix",
+      "shared": 2,
+      "total": 31,
+      "score": 0.0488
+    }
+  ],
+  "commvault": [
+    {
+      "key": "wayfair",
+      "shared": 2,
+      "total": 23,
+      "score": 0.0625
+    },
+    {
+      "key": "vmware",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0606
+    },
+    {
+      "key": "zepto",
+      "shared": 2,
+      "total": 27,
+      "score": 0.0556
+    },
+    {
+      "key": "splunk",
+      "shared": 1,
+      "total": 11,
+      "score": 0.0476
+    },
+    {
+      "key": "databricks",
+      "shared": 2,
+      "total": 35,
+      "score": 0.0455
+    },
+    {
+      "key": "grab",
+      "shared": 1,
+      "total": 12,
+      "score": 0.0455
+    }
+  ],
+  "consultadd": [
+    {
+      "key": "blackrock",
+      "shared": 3,
+      "total": 15,
+      "score": 0.1304
+    },
+    {
+      "key": "zopsmart",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0952
+    },
+    {
+      "key": "siemens",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0938
+    },
+    {
+      "key": "agoda",
+      "shared": 4,
+      "total": 39,
+      "score": 0.087
+    },
+    {
+      "key": "disney",
+      "shared": 2,
+      "total": 14,
+      "score": 0.087
+    },
+    {
+      "key": "yelp",
+      "shared": 3,
+      "total": 28,
+      "score": 0.0833
+    }
+  ],
+  "coupang": [
+    {
+      "key": "bytedance",
+      "shared": 10,
+      "total": 58,
+      "score": 0.119
+    },
+    {
+      "key": "snowflake",
+      "shared": 11,
+      "total": 72,
+      "score": 0.1134
+    },
+    {
+      "key": "nutanix",
+      "shared": 8,
+      "total": 43,
+      "score": 0.1127
+    },
+    {
+      "key": "servicenow",
+      "shared": 10,
+      "total": 76,
+      "score": 0.098
+    },
+    {
+      "key": "anduril",
+      "shared": 5,
+      "total": 22,
+      "score": 0.0943
+    },
+    {
+      "key": "splunk",
+      "shared": 4,
+      "total": 11,
+      "score": 0.093
+    }
+  ],
+  "coursera": [
+    {
+      "key": "two-sigma",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0588
+    },
+    {
+      "key": "twilio",
+      "shared": 1,
+      "total": 11,
+      "score": 0.0455
+    },
+    {
+      "key": "coinbase",
+      "shared": 1,
+      "total": 12,
+      "score": 0.0435
+    },
+    {
+      "key": "robinhood",
+      "shared": 1,
+      "total": 12,
+      "score": 0.0435
+    },
+    {
+      "key": "atlassian",
+      "shared": 3,
+      "total": 63,
+      "score": 0.0417
+    },
+    {
+      "key": "mongodb",
+      "shared": 1,
+      "total": 13,
+      "score": 0.0417
+    }
+  ],
+  "cruise": [
+    {
+      "key": "sofi",
+      "shared": 4,
+      "total": 13,
+      "score": 0.1905
+    },
+    {
+      "key": "ozon",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1364
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.1304
+    },
+    {
+      "key": "pinterest",
+      "shared": 6,
+      "total": 45,
+      "score": 0.1176
+    },
+    {
+      "key": "tencent",
+      "shared": 3,
+      "total": 18,
+      "score": 0.1111
+    },
+    {
+      "key": "intel",
+      "shared": 3,
+      "total": 20,
+      "score": 0.1034
+    }
+  ],
+  "databricks": [
+    {
+      "key": "roblox",
+      "shared": 10,
+      "total": 44,
+      "score": 0.1449
+    },
+    {
+      "key": "netflix",
+      "shared": 7,
+      "total": 31,
+      "score": 0.1186
+    },
+    {
+      "key": "capital-one",
+      "shared": 6,
+      "total": 38,
+      "score": 0.0896
+    },
+    {
+      "key": "phonepe",
+      "shared": 9,
+      "total": 78,
+      "score": 0.0865
+    },
+    {
+      "key": "airbnb",
+      "shared": 7,
+      "total": 55,
+      "score": 0.0843
+    },
+    {
+      "key": "dropbox",
+      "shared": 4,
+      "total": 23,
+      "score": 0.0741
+    }
+  ],
+  "datadog": [
+    {
+      "key": "paytm",
+      "shared": 2,
+      "total": 36,
+      "score": 0.0392
+    },
+    {
+      "key": "consultadd",
+      "shared": 1,
+      "total": 11,
+      "score": 0.037
+    },
+    {
+      "key": "disney",
+      "shared": 1,
+      "total": 14,
+      "score": 0.0333
+    },
+    {
+      "key": "karat",
+      "shared": 1,
+      "total": 14,
+      "score": 0.0333
+    },
+    {
+      "key": "blackrock",
+      "shared": 1,
+      "total": 15,
+      "score": 0.0323
+    },
+    {
+      "key": "block",
+      "shared": 1,
+      "total": 16,
+      "score": 0.0313
+    }
+  ],
+  "pinterest": [
+    {
+      "key": "cruise",
+      "shared": 6,
+      "total": 12,
+      "score": 0.1176
+    },
+    {
+      "key": "snap",
+      "shared": 12,
+      "total": 100,
+      "score": 0.0902
+    },
+    {
+      "key": "block",
+      "shared": 5,
+      "total": 16,
+      "score": 0.0893
+    },
+    {
+      "key": "lyft",
+      "shared": 5,
+      "total": 21,
+      "score": 0.082
+    },
+    {
+      "key": "samsung",
+      "shared": 9,
+      "total": 74,
+      "score": 0.0818
+    },
+    {
+      "key": "servicenow",
+      "shared": 9,
+      "total": 76,
+      "score": 0.0804
+    }
+  ],
+  "pocket-gems": [
+    {
+      "key": "docusign",
+      "shared": 5,
+      "total": 30,
+      "score": 0.125
+    },
+    {
+      "key": "netflix",
+      "shared": 4,
+      "total": 31,
+      "score": 0.0952
+    },
+    {
+      "key": "yelp",
+      "shared": 3,
+      "total": 28,
+      "score": 0.075
+    },
+    {
+      "key": "ebay",
+      "shared": 6,
+      "total": 73,
+      "score": 0.0732
+    },
+    {
+      "key": "grammarly",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0541
+    },
+    {
+      "key": "tesla",
+      "shared": 3,
+      "total": 48,
+      "score": 0.05
+    }
+  ],
+  "de-shaw": [
+    {
+      "key": "oracle",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1696
+    },
+    {
+      "key": "uber",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1494
+    },
+    {
+      "key": "yahoo",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1429
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    },
+    {
+      "key": "microsoft",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    }
+  ],
+  "turing": [
+    {
+      "key": "deloitte",
+      "shared": 9,
+      "total": 20,
+      "score": 0.1957
+    },
+    {
+      "key": "sap",
+      "shared": 11,
+      "total": 37,
+      "score": 0.1803
+    },
+    {
+      "key": "cisco",
+      "shared": 15,
+      "total": 77,
+      "score": 0.1546
+    },
+    {
+      "key": "infosys",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1538
+    },
+    {
+      "key": "epam-systems",
+      "shared": 10,
+      "total": 40,
+      "score": 0.1538
+    },
+    {
+      "key": "bytedance",
+      "shared": 12,
+      "total": 58,
+      "score": 0.1481
+    }
+  ],
+  "tinkoff": [
+    {
+      "key": "servicenow",
+      "shared": 13,
+      "total": 76,
+      "score": 0.1327
+    },
+    {
+      "key": "yandex",
+      "shared": 15,
+      "total": 100,
+      "score": 0.125
+    },
+    {
+      "key": "agoda",
+      "shared": 8,
+      "total": 39,
+      "score": 0.1212
+    },
+    {
+      "key": "netflix",
+      "shared": 7,
+      "total": 31,
+      "score": 0.1186
+    },
+    {
+      "key": "ozon",
+      "shared": 5,
+      "total": 13,
+      "score": 0.1163
+    },
+    {
+      "key": "paypal",
+      "shared": 14,
+      "total": 100,
+      "score": 0.1157
+    }
+  ],
+  "deloitte": [
+    {
+      "key": "wipro",
+      "shared": 9,
+      "total": 24,
+      "score": 0.2571
+    },
+    {
+      "key": "cognizant",
+      "shared": 8,
+      "total": 20,
+      "score": 0.25
+    },
+    {
+      "key": "epam-systems",
+      "shared": 10,
+      "total": 40,
+      "score": 0.2
+    },
+    {
+      "key": "turing",
+      "shared": 9,
+      "total": 35,
+      "score": 0.1957
+    },
+    {
+      "key": "sap",
+      "shared": 9,
+      "total": 37,
+      "score": 0.1875
+    },
+    {
+      "key": "intel",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1765
+    }
+  ],
+  "qualcomm": [
+    {
+      "key": "intel",
+      "shared": 7,
+      "total": 20,
+      "score": 0.1667
+    },
+    {
+      "key": "cisco",
+      "shared": 12,
+      "total": 77,
+      "score": 0.1277
+    },
+    {
+      "key": "wipro",
+      "shared": 6,
+      "total": 24,
+      "score": 0.1277
+    },
+    {
+      "key": "tesla",
+      "shared": 8,
+      "total": 48,
+      "score": 0.1159
+    },
+    {
+      "key": "deloitte",
+      "shared": 5,
+      "total": 20,
+      "score": 0.1136
+    },
+    {
+      "key": "zoho",
+      "shared": 13,
+      "total": 100,
+      "score": 0.1121
+    }
+  ],
+  "twilio": [
+    {
+      "key": "myntra",
+      "shared": 3,
+      "total": 18,
+      "score": 0.1154
+    },
+    {
+      "key": "netflix",
+      "shared": 4,
+      "total": 31,
+      "score": 0.1053
+    },
+    {
+      "key": "nutanix",
+      "shared": 5,
+      "total": 43,
+      "score": 0.102
+    },
+    {
+      "key": "splunk",
+      "shared": 2,
+      "total": 11,
+      "score": 0.1
+    },
+    {
+      "key": "siemens",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0938
+    },
+    {
+      "key": "swiggy",
+      "shared": 3,
+      "total": 25,
+      "score": 0.0909
+    }
+  ],
+  "deutsche-bank": [
+    {
+      "key": "turing",
+      "shared": 6,
+      "total": 35,
+      "score": 0.1017
+    },
+    {
+      "key": "servicenow",
+      "shared": 9,
+      "total": 76,
+      "score": 0.0928
+    },
+    {
+      "key": "deloitte",
+      "shared": 4,
+      "total": 20,
+      "score": 0.087
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 6,
+      "total": 47,
+      "score": 0.0845
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 10,
+      "total": 100,
+      "score": 0.0833
+    },
+    {
+      "key": "sap",
+      "shared": 5,
+      "total": 37,
+      "score": 0.0806
+    }
+  ],
+  "quora": [
+    {
+      "key": "disney",
+      "shared": 1,
+      "total": 14,
+      "score": 0.0333
+    },
+    {
+      "key": "visa",
+      "shared": 2,
+      "total": 67,
+      "score": 0.0244
+    },
+    {
+      "key": "swiggy",
+      "shared": 1,
+      "total": 25,
+      "score": 0.0244
+    },
+    {
+      "key": "databricks",
+      "shared": 1,
+      "total": 35,
+      "score": 0.0196
+    },
+    {
+      "key": "tinkoff",
+      "shared": 1,
+      "total": 35,
+      "score": 0.0196
+    },
+    {
+      "key": "capital-one",
+      "shared": 1,
+      "total": 38,
+      "score": 0.0185
+    }
+  ],
+  "two-sigma": [
+    {
+      "key": "instacart",
+      "shared": 4,
+      "total": 19,
+      "score": 0.1026
+    },
+    {
+      "key": "wix",
+      "shared": 6,
+      "total": 49,
+      "score": 0.0896
+    },
+    {
+      "key": "anduril",
+      "shared": 3,
+      "total": 22,
+      "score": 0.0698
+    },
+    {
+      "key": "snap",
+      "shared": 8,
+      "total": 100,
+      "score": 0.069
+    },
+    {
+      "key": "snowflake",
+      "shared": 6,
+      "total": 72,
+      "score": 0.0667
+    },
+    {
+      "key": "palantir-technologies",
+      "shared": 3,
+      "total": 27,
+      "score": 0.0625
+    }
+  ],
+  "disney": [
+    {
+      "key": "grammarly",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1515
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1333
+    },
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1304
+    },
+    {
+      "key": "zenefits",
+      "shared": 4,
+      "total": 21,
+      "score": 0.129
+    },
+    {
+      "key": "tesla",
+      "shared": 7,
+      "total": 48,
+      "score": 0.1273
+    },
+    {
+      "key": "ozon",
+      "shared": 3,
+      "total": 13,
+      "score": 0.125
+    }
+  ],
+  "rippling": [
+    {
+      "key": "coinbase",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0833
+    },
+    {
+      "key": "zomato",
+      "shared": 2,
+      "total": 21,
+      "score": 0.0606
+    },
+    {
+      "key": "visa",
+      "shared": 4,
+      "total": 67,
+      "score": 0.0519
+    },
+    {
+      "key": "zscaler",
+      "shared": 2,
+      "total": 27,
+      "score": 0.0513
+    },
+    {
+      "key": "servicenow",
+      "shared": 4,
+      "total": 76,
+      "score": 0.0465
+    },
+    {
+      "key": "netflix",
+      "shared": 2,
+      "total": 31,
+      "score": 0.0465
+    }
+  ],
+  "uber": [
+    {
+      "key": "adobe",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "meta",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "microsoft",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "amazon",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "apple",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "yahoo",
+      "shared": 86,
+      "total": 100,
+      "score": 0.7544
+    }
+  ],
+  "docusign": [
+    {
+      "key": "nutanix",
+      "shared": 9,
+      "total": 43,
+      "score": 0.1406
+    },
+    {
+      "key": "pocket-gems",
+      "shared": 5,
+      "total": 15,
+      "score": 0.125
+    },
+    {
+      "key": "intuit",
+      "shared": 11,
+      "total": 70,
+      "score": 0.1236
+    },
+    {
+      "key": "ebay",
+      "shared": 11,
+      "total": 73,
+      "score": 0.1196
+    },
+    {
+      "key": "yelp",
+      "shared": 6,
+      "total": 28,
+      "score": 0.1154
+    },
+    {
+      "key": "bytedance",
+      "shared": 9,
+      "total": 58,
+      "score": 0.1139
+    }
+  ],
+  "robinhood": [
+    {
+      "key": "netflix",
+      "shared": 4,
+      "total": 31,
+      "score": 0.1026
+    },
+    {
+      "key": "coinbase",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0909
+    },
+    {
+      "key": "karat",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0833
+    },
+    {
+      "key": "roblox",
+      "shared": 4,
+      "total": 44,
+      "score": 0.0769
+    },
+    {
+      "key": "capital-one",
+      "shared": 3,
+      "total": 38,
+      "score": 0.0638
+    },
+    {
+      "key": "two-sigma",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0588
+    }
+  ],
+  "verily": [
+    {
+      "key": "blackrock",
+      "shared": 2,
+      "total": 15,
+      "score": 0.0769
+    },
+    {
+      "key": "wipro",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0571
+    },
+    {
+      "key": "consultadd",
+      "shared": 1,
+      "total": 11,
+      "score": 0.0435
+    },
+    {
+      "key": "splunk",
+      "shared": 1,
+      "total": 11,
+      "score": 0.0435
+    },
+    {
+      "key": "twilio",
+      "shared": 1,
+      "total": 11,
+      "score": 0.0435
+    },
+    {
+      "key": "grab",
+      "shared": 1,
+      "total": 12,
+      "score": 0.0417
+    }
+  ],
+  "doordash": [
+    {
+      "key": "salesforce",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1132
+    },
+    {
+      "key": "citadel",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1062
+    },
+    {
+      "key": "snap",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1062
+    },
+    {
+      "key": "nvidia",
+      "shared": 16,
+      "total": 100,
+      "score": 0.0994
+    },
+    {
+      "key": "tesla",
+      "shared": 11,
+      "total": 48,
+      "score": 0.0965
+    },
+    {
+      "key": "atlassian",
+      "shared": 12,
+      "total": 63,
+      "score": 0.0938
+    }
+  ],
+  "roblox": [
+    {
+      "key": "capital-one",
+      "shared": 12,
+      "total": 38,
+      "score": 0.1714
+    },
+    {
+      "key": "databricks",
+      "shared": 10,
+      "total": 35,
+      "score": 0.1449
+    },
+    {
+      "key": "netflix",
+      "shared": 9,
+      "total": 31,
+      "score": 0.1364
+    },
+    {
+      "key": "visa",
+      "shared": 12,
+      "total": 67,
+      "score": 0.1212
+    },
+    {
+      "key": "samsung",
+      "shared": 12,
+      "total": 74,
+      "score": 0.1132
+    },
+    {
+      "key": "uber",
+      "shared": 14,
+      "total": 100,
+      "score": 0.1077
+    }
+  ],
+  "verkada": [
+    {
+      "key": "instacart",
+      "shared": 4,
+      "total": 19,
+      "score": 0.1429
+    },
+    {
+      "key": "mongodb",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0833
+    },
+    {
+      "key": "ixl",
+      "shared": 2,
+      "total": 16,
+      "score": 0.0741
+    },
+    {
+      "key": "databricks",
+      "shared": 3,
+      "total": 35,
+      "score": 0.0667
+    },
+    {
+      "key": "coupang",
+      "shared": 3,
+      "total": 36,
+      "score": 0.0652
+    },
+    {
+      "key": "snowflake",
+      "shared": 5,
+      "total": 72,
+      "score": 0.0625
+    }
+  ],
+  "dropbox": [
+    {
+      "key": "siemens",
+      "shared": 5,
+      "total": 24,
+      "score": 0.119
+    },
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.0938
+    },
+    {
+      "key": "mongodb",
+      "shared": 3,
+      "total": 13,
+      "score": 0.0909
+    },
+    {
+      "key": "ozon",
+      "shared": 3,
+      "total": 13,
+      "score": 0.0909
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.0882
+    },
+    {
+      "key": "pinterest",
+      "shared": 5,
+      "total": 45,
+      "score": 0.0794
+    }
+  ],
+  "rubrik": [
+    {
+      "key": "mongodb",
+      "shared": 3,
+      "total": 13,
+      "score": 0.0769
+    },
+    {
+      "key": "de-shaw",
+      "shared": 8,
+      "total": 100,
+      "score": 0.0661
+    },
+    {
+      "key": "snap",
+      "shared": 7,
+      "total": 100,
+      "score": 0.0574
+    },
+    {
+      "key": "netflix",
+      "shared": 3,
+      "total": 31,
+      "score": 0.0526
+    },
+    {
+      "key": "snowflake",
+      "shared": 5,
+      "total": 72,
+      "score": 0.0521
+    },
+    {
+      "key": "grab",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0513
+    }
+  ],
+  "visa": [
+    {
+      "key": "walmart-labs",
+      "shared": 30,
+      "total": 100,
+      "score": 0.219
+    },
+    {
+      "key": "ebay",
+      "shared": 22,
+      "total": 73,
+      "score": 0.1864
+    },
+    {
+      "key": "accenture",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1844
+    },
+    {
+      "key": "infosys",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1844
+    },
+    {
+      "key": "servicenow",
+      "shared": 22,
+      "total": 76,
+      "score": 0.1818
+    },
+    {
+      "key": "capital-one",
+      "shared": 16,
+      "total": 38,
+      "score": 0.1798
+    }
+  ],
+  "ebay": [
+    {
+      "key": "walmart-labs",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2536
+    },
+    {
+      "key": "oracle",
+      "shared": 33,
+      "total": 100,
+      "score": 0.2357
+    },
+    {
+      "key": "servicenow",
+      "shared": 27,
+      "total": 76,
+      "score": 0.2213
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 31,
+      "total": 100,
+      "score": 0.2183
+    },
+    {
+      "key": "salesforce",
+      "shared": 30,
+      "total": 100,
+      "score": 0.2098
+    },
+    {
+      "key": "zoho",
+      "shared": 29,
+      "total": 100,
+      "score": 0.2014
+    }
+  ],
+  "salesforce": [
+    {
+      "key": "walmart-labs",
+      "shared": 45,
+      "total": 100,
+      "score": 0.2903
+    },
+    {
+      "key": "servicenow",
+      "shared": 32,
+      "total": 76,
+      "score": 0.2222
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2121
+    },
+    {
+      "key": "ebay",
+      "shared": 30,
+      "total": 73,
+      "score": 0.2098
+    },
+    {
+      "key": "oracle",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    },
+    {
+      "key": "uber",
+      "shared": 32,
+      "total": 100,
+      "score": 0.1905
+    }
+  ],
+  "vmware": [
+    {
+      "key": "accolite",
+      "shared": 6,
+      "total": 17,
+      "score": 0.1714
+    },
+    {
+      "key": "grab",
+      "shared": 5,
+      "total": 12,
+      "score": 0.1613
+    },
+    {
+      "key": "bytedance",
+      "shared": 11,
+      "total": 58,
+      "score": 0.1549
+    },
+    {
+      "key": "ebay",
+      "shared": 13,
+      "total": 73,
+      "score": 0.1548
+    },
+    {
+      "key": "swiggy",
+      "shared": 6,
+      "total": 25,
+      "score": 0.1395
+    },
+    {
+      "key": "oracle",
+      "shared": 15,
+      "total": 100,
+      "score": 0.1376
+    }
+  ],
+  "epam-systems": [
+    {
+      "key": "wipro",
+      "shared": 13,
+      "total": 24,
+      "score": 0.2549
+    },
+    {
+      "key": "infosys",
+      "shared": 24,
+      "total": 100,
+      "score": 0.2069
+    },
+    {
+      "key": "yandex",
+      "shared": 24,
+      "total": 100,
+      "score": 0.2069
+    },
+    {
+      "key": "cognizant",
+      "shared": 10,
+      "total": 20,
+      "score": 0.2
+    },
+    {
+      "key": "deloitte",
+      "shared": 10,
+      "total": 20,
+      "score": 0.2
+    },
+    {
+      "key": "accenture",
+      "shared": 23,
+      "total": 100,
+      "score": 0.1966
+    }
+  ],
+  "samsung": [
+    {
+      "key": "goldman-sachs",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1757
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1757
+    },
+    {
+      "key": "nvidia",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1678
+    },
+    {
+      "key": "yahoo",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1678
+    },
+    {
+      "key": "epam-systems",
+      "shared": 16,
+      "total": 40,
+      "score": 0.1633
+    },
+    {
+      "key": "cisco",
+      "shared": 21,
+      "total": 77,
+      "score": 0.1615
+    }
+  ],
+  "epic-systems": [
+    {
+      "key": "spotify",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1429
+    },
+    {
+      "key": "accolite",
+      "shared": 3,
+      "total": 17,
+      "score": 0.12
+    },
+    {
+      "key": "intel",
+      "shared": 3,
+      "total": 20,
+      "score": 0.1071
+    },
+    {
+      "key": "roblox",
+      "shared": 5,
+      "total": 44,
+      "score": 0.1
+    },
+    {
+      "key": "turing",
+      "shared": 4,
+      "total": 35,
+      "score": 0.0952
+    },
+    {
+      "key": "grab",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0952
+    }
+  ],
+  "sap": [
+    {
+      "key": "deloitte",
+      "shared": 9,
+      "total": 20,
+      "score": 0.1875
+    },
+    {
+      "key": "turing",
+      "shared": 11,
+      "total": 35,
+      "score": 0.1803
+    },
+    {
+      "key": "epam-systems",
+      "shared": 11,
+      "total": 40,
+      "score": 0.1667
+    },
+    {
+      "key": "servicenow",
+      "shared": 16,
+      "total": 76,
+      "score": 0.1649
+    },
+    {
+      "key": "bytedance",
+      "shared": 13,
+      "total": 58,
+      "score": 0.1585
+    },
+    {
+      "key": "oracle",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1513
+    }
+  ],
+  "walmart-labs": [
+    {
+      "key": "oracle",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    },
+    {
+      "key": "salesforce",
+      "shared": 45,
+      "total": 100,
+      "score": 0.2903
+    },
+    {
+      "key": "servicenow",
+      "shared": 39,
+      "total": 76,
+      "score": 0.2847
+    },
+    {
+      "key": "paypal",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "ebay",
+      "shared": 35,
+      "total": 73,
+      "score": 0.2536
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    }
+  ],
+  "expedia": [
+    {
+      "key": "intel",
+      "shared": 11,
+      "total": 20,
+      "score": 0.1864
+    },
+    {
+      "key": "servicenow",
+      "shared": 18,
+      "total": 76,
+      "score": 0.1667
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 21,
+      "total": 100,
+      "score": 0.1628
+    },
+    {
+      "key": "nvidia",
+      "shared": 19,
+      "total": 100,
+      "score": 0.145
+    },
+    {
+      "key": "oracle",
+      "shared": 19,
+      "total": 100,
+      "score": 0.145
+    },
+    {
+      "key": "paypal",
+      "shared": 19,
+      "total": 100,
+      "score": 0.145
+    }
+  ],
+  "servicenow": [
+    {
+      "key": "walmart-labs",
+      "shared": 39,
+      "total": 100,
+      "score": 0.2847
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 38,
+      "total": 100,
+      "score": 0.2754
+    },
+    {
+      "key": "oracle",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2482
+    },
+    {
+      "key": "paypal",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2394
+    },
+    {
+      "key": "salesforce",
+      "shared": 32,
+      "total": 100,
+      "score": 0.2222
+    },
+    {
+      "key": "yandex",
+      "shared": 32,
+      "total": 100,
+      "score": 0.2222
+    }
+  ],
+  "flipkart": [
+    {
+      "key": "walmart-labs",
+      "shared": 37,
+      "total": 100,
+      "score": 0.227
+    },
+    {
+      "key": "servicenow",
+      "shared": 26,
+      "total": 76,
+      "score": 0.1733
+    },
+    {
+      "key": "oracle",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1696
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 27,
+      "total": 100,
+      "score": 0.1561
+    },
+    {
+      "key": "ebay",
+      "shared": 23,
+      "total": 73,
+      "score": 0.1533
+    },
+    {
+      "key": "uber",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1494
+    }
+  ],
+  "wayfair": [
+    {
+      "key": "commvault",
+      "shared": 2,
+      "total": 11,
+      "score": 0.0625
+    },
+    {
+      "key": "splunk",
+      "shared": 2,
+      "total": 11,
+      "score": 0.0625
+    },
+    {
+      "key": "turing",
+      "shared": 3,
+      "total": 35,
+      "score": 0.0545
+    },
+    {
+      "key": "paytm",
+      "shared": 3,
+      "total": 36,
+      "score": 0.0536
+    },
+    {
+      "key": "cisco",
+      "shared": 5,
+      "total": 77,
+      "score": 0.0526
+    },
+    {
+      "key": "bookingcom",
+      "shared": 2,
+      "total": 17,
+      "score": 0.0526
+    }
+  ],
+  "siemens": [
+    {
+      "key": "epam-systems",
+      "shared": 9,
+      "total": 40,
+      "score": 0.1636
+    },
+    {
+      "key": "cognizant",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1579
+    },
+    {
+      "key": "intel",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1579
+    },
+    {
+      "key": "ozon",
+      "shared": 5,
+      "total": 13,
+      "score": 0.1563
+    },
+    {
+      "key": "huawei",
+      "shared": 5,
+      "total": 14,
+      "score": 0.1515
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 9,
+      "total": 47,
+      "score": 0.1452
+    }
+  ],
+  "geico": [
+    {
+      "key": "ebay",
+      "shared": 6,
+      "total": 73,
+      "score": 0.0714
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 7,
+      "total": 100,
+      "score": 0.0636
+    },
+    {
+      "key": "instacart",
+      "shared": 2,
+      "total": 19,
+      "score": 0.0588
+    },
+    {
+      "key": "intel",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0571
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 6,
+      "total": 100,
+      "score": 0.0541
+    },
+    {
+      "key": "zoho",
+      "shared": 6,
+      "total": 100,
+      "score": 0.0541
+    }
+  ],
+  "wells-fargo": [
+    {
+      "key": "instacart",
+      "shared": 2,
+      "total": 19,
+      "score": 0.0667
+    },
+    {
+      "key": "paytm",
+      "shared": 3,
+      "total": 36,
+      "score": 0.0652
+    },
+    {
+      "key": "intel",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0645
+    },
+    {
+      "key": "sap",
+      "shared": 3,
+      "total": 37,
+      "score": 0.0638
+    },
+    {
+      "key": "makemytrip",
+      "shared": 2,
+      "total": 25,
+      "score": 0.0556
+    },
+    {
+      "key": "qualcomm",
+      "shared": 2,
+      "total": 29,
+      "score": 0.05
+    }
+  ],
+  "snap": [
+    {
+      "key": "walmart-labs",
+      "shared": 27,
+      "total": 100,
+      "score": 0.1561
+    },
+    {
+      "key": "citadel",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1429
+    },
+    {
+      "key": "oracle",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1429
+    },
+    {
+      "key": "flipkart",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    },
+    {
+      "key": "yandex",
+      "shared": 24,
+      "total": 100,
+      "score": 0.1364
+    }
+  ],
+  "goldman-sachs": [
+    {
+      "key": "oracle",
+      "shared": 48,
+      "total": 100,
+      "score": 0.3158
+    },
+    {
+      "key": "servicenow",
+      "shared": 38,
+      "total": 76,
+      "score": 0.2754
+    },
+    {
+      "key": "uber",
+      "shared": 43,
+      "total": 100,
+      "score": 0.2739
+    },
+    {
+      "key": "yandex",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    },
+    {
+      "key": "infosys",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "yahoo",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    }
+  ],
+  "snowflake": [
+    {
+      "key": "salesforce",
+      "shared": 22,
+      "total": 100,
+      "score": 0.1467
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 22,
+      "total": 100,
+      "score": 0.1467
+    },
+    {
+      "key": "ebay",
+      "shared": 17,
+      "total": 73,
+      "score": 0.1328
+    },
+    {
+      "key": "flipkart",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1316
+    },
+    {
+      "key": "oracle",
+      "shared": 19,
+      "total": 100,
+      "score": 0.1242
+    },
+    {
+      "key": "snap",
+      "shared": 19,
+      "total": 100,
+      "score": 0.1242
+    }
+  ],
+  "wipro": [
+    {
+      "key": "deloitte",
+      "shared": 9,
+      "total": 20,
+      "score": 0.2571
+    },
+    {
+      "key": "intel",
+      "shared": 9,
+      "total": 20,
+      "score": 0.2571
+    },
+    {
+      "key": "epam-systems",
+      "shared": 13,
+      "total": 40,
+      "score": 0.2549
+    },
+    {
+      "key": "tcs",
+      "shared": 19,
+      "total": 100,
+      "score": 0.181
+    },
+    {
+      "key": "accenture",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1698
+    },
+    {
+      "key": "cognizant",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1579
+    }
+  ],
+  "google": [
+    {
+      "key": "amazon",
+      "shared": 35,
+      "total": 100,
+      "score": 0.2121
+    },
+    {
+      "key": "apple",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    },
+    {
+      "key": "meta",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    },
+    {
+      "key": "uber",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    },
+    {
+      "key": "microsoft",
+      "shared": 33,
+      "total": 100,
+      "score": 0.1976
+    },
+    {
+      "key": "adobe",
+      "shared": 32,
+      "total": 100,
+      "score": 0.1905
+    }
+  ],
+  "sofi": [
+    {
+      "key": "cruise",
+      "shared": 4,
+      "total": 12,
+      "score": 0.1905
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1379
+    },
+    {
+      "key": "thoughtspot",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1364
+    },
+    {
+      "key": "lyft",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0968
+    },
+    {
+      "key": "bytedance",
+      "shared": 6,
+      "total": 58,
+      "score": 0.0923
+    },
+    {
+      "key": "splunk",
+      "shared": 2,
+      "total": 11,
+      "score": 0.0909
+    }
+  ],
+  "wix": [
+    {
+      "key": "oracle",
+      "shared": 21,
+      "total": 100,
+      "score": 0.1641
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 19,
+      "total": 100,
+      "score": 0.1462
+    },
+    {
+      "key": "ebay",
+      "shared": 15,
+      "total": 73,
+      "score": 0.1402
+    },
+    {
+      "key": "salesforce",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1374
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1288
+    },
+    {
+      "key": "yahoo",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1288
+    }
+  ],
+  "grab": [
+    {
+      "key": "vmware",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1613
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1429
+    },
+    {
+      "key": "spotify",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1364
+    },
+    {
+      "key": "palo-alto-networks",
+      "shared": 3,
+      "total": 16,
+      "score": 0.12
+    },
+    {
+      "key": "turing",
+      "shared": 5,
+      "total": 35,
+      "score": 0.119
+    },
+    {
+      "key": "paytm",
+      "shared": 5,
+      "total": 36,
+      "score": 0.1163
+    }
+  ],
+  "splunk": [
+    {
+      "key": "palo-alto-networks",
+      "shared": 4,
+      "total": 16,
+      "score": 0.1739
+    },
+    {
+      "key": "twilio",
+      "shared": 2,
+      "total": 11,
+      "score": 0.1
+    },
+    {
+      "key": "cruise",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0952
+    },
+    {
+      "key": "coupang",
+      "shared": 4,
+      "total": 36,
+      "score": 0.093
+    },
+    {
+      "key": "sofi",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0909
+    },
+    {
+      "key": "agoda",
+      "shared": 4,
+      "total": 39,
+      "score": 0.087
+    }
+  ],
+  "grammarly": [
+    {
+      "key": "disney",
+      "shared": 5,
+      "total": 14,
+      "score": 0.1515
+    },
+    {
+      "key": "block",
+      "shared": 3,
+      "total": 16,
+      "score": 0.0811
+    },
+    {
+      "key": "ixl",
+      "shared": 3,
+      "total": 16,
+      "score": 0.0811
+    },
+    {
+      "key": "netflix",
+      "shared": 4,
+      "total": 31,
+      "score": 0.0784
+    },
+    {
+      "key": "turing",
+      "shared": 4,
+      "total": 35,
+      "score": 0.0727
+    },
+    {
+      "key": "nvidia",
+      "shared": 8,
+      "total": 100,
+      "score": 0.069
+    }
+  ],
+  "x": [
+    {
+      "key": "cisco",
+      "shared": 12,
+      "total": 77,
+      "score": 0.1043
+    },
+    {
+      "key": "airbnb",
+      "shared": 9,
+      "total": 55,
+      "score": 0.0938
+    },
+    {
+      "key": "docusign",
+      "shared": 6,
+      "total": 30,
+      "score": 0.0811
+    },
+    {
+      "key": "oracle",
+      "shared": 11,
+      "total": 100,
+      "score": 0.0791
+    },
+    {
+      "key": "samsung",
+      "shared": 9,
+      "total": 74,
+      "score": 0.0783
+    },
+    {
+      "key": "zenefits",
+      "shared": 5,
+      "total": 21,
+      "score": 0.0758
+    }
+  ],
+  "spotify": [
+    {
+      "key": "wipro",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1563
+    },
+    {
+      "key": "epic-systems",
+      "shared": 3,
+      "total": 11,
+      "score": 0.1429
+    },
+    {
+      "key": "grab",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1364
+    },
+    {
+      "key": "epam-systems",
+      "shared": 6,
+      "total": 40,
+      "score": 0.1277
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.125
+    },
+    {
+      "key": "turing",
+      "shared": 5,
+      "total": 35,
+      "score": 0.1163
+    }
+  ],
+  "huawei": [
+    {
+      "key": "siemens",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1515
+    },
+    {
+      "key": "sap",
+      "shared": 6,
+      "total": 37,
+      "score": 0.1333
+    },
+    {
+      "key": "cognizant",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1333
+    },
+    {
+      "key": "deloitte",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1333
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1333
+    },
+    {
+      "key": "ozon",
+      "shared": 3,
+      "total": 13,
+      "score": 0.125
+    }
+  ],
+  "yahoo": [
+    {
+      "key": "adobe",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "meta",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "microsoft",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    },
+    {
+      "key": "apple",
+      "shared": 86,
+      "total": 100,
+      "score": 0.7544
+    },
+    {
+      "key": "uber",
+      "shared": 86,
+      "total": 100,
+      "score": 0.7544
+    },
+    {
+      "key": "amazon",
+      "shared": 85,
+      "total": 100,
+      "score": 0.7391
+    }
+  ],
+  "sprinklr": [
+    {
+      "key": "myntra",
+      "shared": 7,
+      "total": 18,
+      "score": 0.1228
+    },
+    {
+      "key": "makemytrip",
+      "shared": 6,
+      "total": 25,
+      "score": 0.0923
+    },
+    {
+      "key": "salesforce",
+      "shared": 12,
+      "total": 100,
+      "score": 0.0896
+    },
+    {
+      "key": "servicenow",
+      "shared": 10,
+      "total": 76,
+      "score": 0.0893
+    },
+    {
+      "key": "samsung",
+      "shared": 9,
+      "total": 74,
+      "score": 0.0811
+    },
+    {
+      "key": "swiggy",
+      "shared": 5,
+      "total": 25,
+      "score": 0.0758
+    }
+  ],
+  "ibm": [
+    {
+      "key": "zoho",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 30,
+      "total": 100,
+      "score": 0.1765
+    },
+    {
+      "key": "nvidia",
+      "shared": 29,
+      "total": 100,
+      "score": 0.1696
+    },
+    {
+      "key": "ebay",
+      "shared": 25,
+      "total": 73,
+      "score": 0.1689
+    },
+    {
+      "key": "oracle",
+      "shared": 27,
+      "total": 100,
+      "score": 0.1561
+    },
+    {
+      "key": "tcs",
+      "shared": 27,
+      "total": 100,
+      "score": 0.1561
+    }
+  ],
+  "yandex": [
+    {
+      "key": "goldman-sachs",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    },
+    {
+      "key": "oracle",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    },
+    {
+      "key": "yahoo",
+      "shared": 38,
+      "total": 100,
+      "score": 0.2346
+    },
+    {
+      "key": "servicenow",
+      "shared": 32,
+      "total": 76,
+      "score": 0.2222
+    },
+    {
+      "key": "meta",
+      "shared": 36,
+      "total": 100,
+      "score": 0.2195
+    }
+  ],
+  "tesla": [
+    {
+      "key": "intuit",
+      "shared": 17,
+      "total": 70,
+      "score": 0.1683
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 21,
+      "total": 100,
+      "score": 0.1654
+    },
+    {
+      "key": "salesforce",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1563
+    },
+    {
+      "key": "yandex",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1563
+    },
+    {
+      "key": "ebay",
+      "shared": 16,
+      "total": 73,
+      "score": 0.1524
+    },
+    {
+      "key": "nvidia",
+      "shared": 19,
+      "total": 100,
+      "score": 0.1473
+    }
+  ],
+  "infosys": [
+    {
+      "key": "tcs",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "uber",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "yahoo",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "accenture",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    },
+    {
+      "key": "adobe",
+      "shared": 40,
+      "total": 100,
+      "score": 0.25
+    }
+  ],
+  "thoughtspot": [
+    {
+      "key": "sofi",
+      "shared": 3,
+      "total": 13,
+      "score": 0.1364
+    },
+    {
+      "key": "cruise",
+      "shared": 2,
+      "total": 12,
+      "score": 0.0909
+    },
+    {
+      "key": "disney",
+      "shared": 2,
+      "total": 14,
+      "score": 0.0833
+    },
+    {
+      "key": "zeta",
+      "shared": 2,
+      "total": 15,
+      "score": 0.08
+    },
+    {
+      "key": "intel",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0667
+    },
+    {
+      "key": "zenefits",
+      "shared": 2,
+      "total": 21,
+      "score": 0.0645
+    }
+  ],
+  "yelp": [
+    {
+      "key": "agoda",
+      "shared": 7,
+      "total": 39,
+      "score": 0.1167
+    },
+    {
+      "key": "docusign",
+      "shared": 6,
+      "total": 30,
+      "score": 0.1154
+    },
+    {
+      "key": "netflix",
+      "shared": 6,
+      "total": 31,
+      "score": 0.1132
+    },
+    {
+      "key": "nutanix",
+      "shared": 7,
+      "total": 43,
+      "score": 0.1094
+    },
+    {
+      "key": "siemens",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1064
+    },
+    {
+      "key": "bytedance",
+      "shared": 8,
+      "total": 58,
+      "score": 0.1026
+    }
+  ],
+  "instacart": [
+    {
+      "key": "verkada",
+      "shared": 4,
+      "total": 13,
+      "score": 0.1429
+    },
+    {
+      "key": "two-sigma",
+      "shared": 4,
+      "total": 24,
+      "score": 0.1026
+    },
+    {
+      "key": "makemytrip",
+      "shared": 4,
+      "total": 25,
+      "score": 0.1
+    },
+    {
+      "key": "karat",
+      "shared": 3,
+      "total": 14,
+      "score": 0.1
+    },
+    {
+      "key": "medianet",
+      "shared": 5,
+      "total": 39,
+      "score": 0.0943
+    },
+    {
+      "key": "zoho",
+      "shared": 10,
+      "total": 100,
+      "score": 0.0917
+    }
+  ],
+  "zenefits": [
+    {
+      "key": "sap",
+      "shared": 7,
+      "total": 37,
+      "score": 0.1373
+    },
+    {
+      "key": "disney",
+      "shared": 4,
+      "total": 14,
+      "score": 0.129
+    },
+    {
+      "key": "servicenow",
+      "shared": 11,
+      "total": 76,
+      "score": 0.1279
+    },
+    {
+      "key": "wipro",
+      "shared": 5,
+      "total": 24,
+      "score": 0.125
+    },
+    {
+      "key": "swiggy",
+      "shared": 5,
+      "total": 25,
+      "score": 0.122
+    },
+    {
+      "key": "qualcomm",
+      "shared": 5,
+      "total": 29,
+      "score": 0.1111
+    }
+  ],
+  "intel": [
+    {
+      "key": "wipro",
+      "shared": 9,
+      "total": 24,
+      "score": 0.2571
+    },
+    {
+      "key": "expedia",
+      "shared": 11,
+      "total": 50,
+      "score": 0.1864
+    },
+    {
+      "key": "epam-systems",
+      "shared": 9,
+      "total": 40,
+      "score": 0.1765
+    },
+    {
+      "key": "cognizant",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1765
+    },
+    {
+      "key": "deloitte",
+      "shared": 6,
+      "total": 20,
+      "score": 0.1765
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 10,
+      "total": 47,
+      "score": 0.1754
+    }
+  ],
+  "swiggy": [
+    {
+      "key": "vmware",
+      "shared": 6,
+      "total": 24,
+      "score": 0.1395
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 8,
+      "total": 47,
+      "score": 0.125
+    },
+    {
+      "key": "intel",
+      "shared": 5,
+      "total": 20,
+      "score": 0.125
+    },
+    {
+      "key": "zenefits",
+      "shared": 5,
+      "total": 21,
+      "score": 0.122
+    },
+    {
+      "key": "disney",
+      "shared": 4,
+      "total": 14,
+      "score": 0.1143
+    },
+    {
+      "key": "wipro",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1136
+    }
+  ],
+  "intuit": [
+    {
+      "key": "servicenow",
+      "shared": 25,
+      "total": 76,
+      "score": 0.2066
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 28,
+      "total": 100,
+      "score": 0.1972
+    },
+    {
+      "key": "salesforce",
+      "shared": 26,
+      "total": 100,
+      "score": 0.1806
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1724
+    },
+    {
+      "key": "oracle",
+      "shared": 25,
+      "total": 100,
+      "score": 0.1724
+    },
+    {
+      "key": "tesla",
+      "shared": 17,
+      "total": 48,
+      "score": 0.1683
+    }
+  ],
+  "zepto": [
+    {
+      "key": "phonepe",
+      "shared": 12,
+      "total": 78,
+      "score": 0.129
+    },
+    {
+      "key": "samsung",
+      "shared": 10,
+      "total": 74,
+      "score": 0.1099
+    },
+    {
+      "key": "turing",
+      "shared": 6,
+      "total": 35,
+      "score": 0.1071
+    },
+    {
+      "key": "bytedance",
+      "shared": 8,
+      "total": 58,
+      "score": 0.1039
+    },
+    {
+      "key": "myntra",
+      "shared": 4,
+      "total": 18,
+      "score": 0.0976
+    },
+    {
+      "key": "oracle",
+      "shared": 11,
+      "total": 100,
+      "score": 0.0948
+    }
+  ],
+  "mitsogo": [
+    {
+      "key": "consultadd",
+      "shared": 2,
+      "total": 11,
+      "score": 0.08
+    },
+    {
+      "key": "deloitte",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0588
+    },
+    {
+      "key": "siemens",
+      "shared": 2,
+      "total": 24,
+      "score": 0.0526
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 5,
+      "total": 100,
+      "score": 0.045
+    },
+    {
+      "key": "uber",
+      "shared": 5,
+      "total": 100,
+      "score": 0.045
+    },
+    {
+      "key": "cisco",
+      "shared": 4,
+      "total": 77,
+      "score": 0.0449
+    }
+  ],
+  "mongodb": [
+    {
+      "key": "karat",
+      "shared": 3,
+      "total": 14,
+      "score": 0.125
+    },
+    {
+      "key": "autodesk",
+      "shared": 3,
+      "total": 16,
+      "score": 0.1154
+    },
+    {
+      "key": "palo-alto-networks",
+      "shared": 3,
+      "total": 16,
+      "score": 0.1154
+    },
+    {
+      "key": "dropbox",
+      "shared": 3,
+      "total": 23,
+      "score": 0.0909
+    },
+    {
+      "key": "twilio",
+      "shared": 2,
+      "total": 11,
+      "score": 0.0909
+    },
+    {
+      "key": "vmware",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0882
+    }
+  ],
+  "zeta": [
+    {
+      "key": "makemytrip",
+      "shared": 3,
+      "total": 25,
+      "score": 0.0811
+    },
+    {
+      "key": "thoughtspot",
+      "shared": 2,
+      "total": 12,
+      "score": 0.08
+    },
+    {
+      "key": "snowflake",
+      "shared": 6,
+      "total": 72,
+      "score": 0.0741
+    },
+    {
+      "key": "qualcomm",
+      "shared": 3,
+      "total": 29,
+      "score": 0.0732
+    },
+    {
+      "key": "josh-technology",
+      "shared": 2,
+      "total": 15,
+      "score": 0.0714
+    },
+    {
+      "key": "intel",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0606
+    }
+  ],
+  "tencent": [
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1111
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.1034
+    },
+    {
+      "key": "swiggy",
+      "shared": 4,
+      "total": 25,
+      "score": 0.1026
+    },
+    {
+      "key": "netflix",
+      "shared": 4,
+      "total": 31,
+      "score": 0.0889
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 5,
+      "total": 47,
+      "score": 0.0833
+    },
+    {
+      "key": "agoda",
+      "shared": 4,
+      "total": 39,
+      "score": 0.0755
+    }
+  ],
+  "ixl": [
+    {
+      "key": "anduril",
+      "shared": 4,
+      "total": 22,
+      "score": 0.1176
+    },
+    {
+      "key": "grammarly",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0811
+    },
+    {
+      "key": "zepto",
+      "shared": 3,
+      "total": 27,
+      "score": 0.075
+    },
+    {
+      "key": "mongodb",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0741
+    },
+    {
+      "key": "sofi",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0741
+    },
+    {
+      "key": "verkada",
+      "shared": 2,
+      "total": 13,
+      "score": 0.0741
+    }
+  ],
+  "morgan-stanley": [
+    {
+      "key": "goldman-sachs",
+      "shared": 22,
+      "total": 100,
+      "score": 0.176
+    },
+    {
+      "key": "intel",
+      "shared": 10,
+      "total": 20,
+      "score": 0.1754
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1575
+    },
+    {
+      "key": "infosys",
+      "shared": 19,
+      "total": 100,
+      "score": 0.1484
+    },
+    {
+      "key": "siemens",
+      "shared": 9,
+      "total": 24,
+      "score": 0.1452
+    },
+    {
+      "key": "ebay",
+      "shared": 15,
+      "total": 73,
+      "score": 0.1429
+    }
+  ],
+  "zoho": [
+    {
+      "key": "adobe",
+      "shared": 47,
+      "total": 100,
+      "score": 0.3072
+    },
+    {
+      "key": "amazon",
+      "shared": 47,
+      "total": 100,
+      "score": 0.3072
+    },
+    {
+      "key": "microsoft",
+      "shared": 47,
+      "total": 100,
+      "score": 0.3072
+    },
+    {
+      "key": "apple",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    },
+    {
+      "key": "meta",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    },
+    {
+      "key": "uber",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    }
+  ],
+  "tcs": [
+    {
+      "key": "infosys",
+      "shared": 46,
+      "total": 100,
+      "score": 0.2987
+    },
+    {
+      "key": "uber",
+      "shared": 44,
+      "total": 100,
+      "score": 0.2821
+    },
+    {
+      "key": "yahoo",
+      "shared": 43,
+      "total": 100,
+      "score": 0.2739
+    },
+    {
+      "key": "accenture",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    },
+    {
+      "key": "adobe",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    },
+    {
+      "key": "amazon",
+      "shared": 42,
+      "total": 100,
+      "score": 0.2658
+    }
+  ],
+  "myntra": [
+    {
+      "key": "zopsmart",
+      "shared": 4,
+      "total": 12,
+      "score": 0.1538
+    },
+    {
+      "key": "servicenow",
+      "shared": 11,
+      "total": 76,
+      "score": 0.1325
+    },
+    {
+      "key": "sprinklr",
+      "shared": 7,
+      "total": 46,
+      "score": 0.1228
+    },
+    {
+      "key": "twilio",
+      "shared": 3,
+      "total": 11,
+      "score": 0.1154
+    },
+    {
+      "key": "nutanix",
+      "shared": 6,
+      "total": 43,
+      "score": 0.1091
+    },
+    {
+      "key": "siemens",
+      "shared": 4,
+      "total": 24,
+      "score": 0.1053
+    }
+  ],
+  "zomato": [
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1
+    },
+    {
+      "key": "siemens",
+      "shared": 4,
+      "total": 24,
+      "score": 0.0976
+    },
+    {
+      "key": "myntra",
+      "shared": 3,
+      "total": 18,
+      "score": 0.0833
+    },
+    {
+      "key": "coupang",
+      "shared": 4,
+      "total": 36,
+      "score": 0.0755
+    },
+    {
+      "key": "nutanix",
+      "shared": 4,
+      "total": 43,
+      "score": 0.0667
+    },
+    {
+      "key": "mathworks",
+      "shared": 3,
+      "total": 29,
+      "score": 0.0638
+    }
+  ],
+  "ozon": [
+    {
+      "key": "siemens",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1563
+    },
+    {
+      "key": "wipro",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1563
+    },
+    {
+      "key": "deloitte",
+      "shared": 4,
+      "total": 20,
+      "score": 0.1379
+    },
+    {
+      "key": "sap",
+      "shared": 6,
+      "total": 37,
+      "score": 0.1364
+    },
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.1364
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.125
+    }
+  ],
+  "josh-technology": [
+    {
+      "key": "intel",
+      "shared": 3,
+      "total": 20,
+      "score": 0.0938
+    },
+    {
+      "key": "bny-mellon",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0909
+    },
+    {
+      "key": "vmware",
+      "shared": 3,
+      "total": 24,
+      "score": 0.0833
+    },
+    {
+      "key": "makemytrip",
+      "shared": 3,
+      "total": 25,
+      "score": 0.0811
+    },
+    {
+      "key": "zopsmart",
+      "shared": 2,
+      "total": 12,
+      "score": 0.08
+    },
+    {
+      "key": "nutanix",
+      "shared": 4,
+      "total": 43,
+      "score": 0.0741
+    }
+  ],
+  "palantir-technologies": [
+    {
+      "key": "yandex",
+      "shared": 10,
+      "total": 100,
+      "score": 0.0855
+    },
+    {
+      "key": "siemens",
+      "shared": 4,
+      "total": 24,
+      "score": 0.0851
+    },
+    {
+      "key": "cruise",
+      "shared": 3,
+      "total": 12,
+      "score": 0.0833
+    },
+    {
+      "key": "airbnb",
+      "shared": 6,
+      "total": 55,
+      "score": 0.0789
+    },
+    {
+      "key": "disney",
+      "shared": 3,
+      "total": 14,
+      "score": 0.0789
+    },
+    {
+      "key": "qualcomm",
+      "shared": 4,
+      "total": 29,
+      "score": 0.0769
+    }
+  ],
+  "zopsmart": [
+    {
+      "key": "myntra",
+      "shared": 4,
+      "total": 18,
+      "score": 0.1538
+    },
+    {
+      "key": "epam-systems",
+      "shared": 5,
+      "total": 40,
+      "score": 0.1064
+    },
+    {
+      "key": "intel",
+      "shared": 3,
+      "total": 20,
+      "score": 0.1034
+    },
+    {
+      "key": "nutanix",
+      "shared": 5,
+      "total": 43,
+      "score": 0.1
+    },
+    {
+      "key": "bny-mellon",
+      "shared": 3,
+      "total": 21,
+      "score": 0.1
+    },
+    {
+      "key": "consultadd",
+      "shared": 2,
+      "total": 11,
+      "score": 0.0952
+    }
+  ],
+  "netflix": [
+    {
+      "key": "ebay",
+      "shared": 15,
+      "total": 73,
+      "score": 0.1685
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 16,
+      "total": 100,
+      "score": 0.1391
+    },
+    {
+      "key": "yandex",
+      "shared": 16,
+      "total": 100,
+      "score": 0.1391
+    },
+    {
+      "key": "servicenow",
+      "shared": 13,
+      "total": 76,
+      "score": 0.1383
+    },
+    {
+      "key": "roblox",
+      "shared": 9,
+      "total": 44,
+      "score": 0.1364
+    },
+    {
+      "key": "intuit",
+      "shared": 12,
+      "total": 70,
+      "score": 0.1348
+    }
+  ],
+  "karat": [
+    {
+      "key": "mongodb",
+      "shared": 3,
+      "total": 13,
+      "score": 0.125
+    },
+    {
+      "key": "capital-one",
+      "shared": 5,
+      "total": 38,
+      "score": 0.1064
+    },
+    {
+      "key": "instacart",
+      "shared": 3,
+      "total": 19,
+      "score": 0.1
+    },
+    {
+      "key": "roblox",
+      "shared": 5,
+      "total": 44,
+      "score": 0.0943
+    },
+    {
+      "key": "zenefits",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0938
+    },
+    {
+      "key": "anduril",
+      "shared": 3,
+      "total": 22,
+      "score": 0.0909
+    }
+  ],
+  "palo-alto-networks": [
+    {
+      "key": "splunk",
+      "shared": 4,
+      "total": 11,
+      "score": 0.1739
+    },
+    {
+      "key": "intuit",
+      "shared": 10,
+      "total": 70,
+      "score": 0.1316
+    },
+    {
+      "key": "intel",
+      "shared": 4,
+      "total": 20,
+      "score": 0.125
+    },
+    {
+      "key": "epam-systems",
+      "shared": 6,
+      "total": 40,
+      "score": 0.12
+    },
+    {
+      "key": "grab",
+      "shared": 3,
+      "total": 12,
+      "score": 0.12
+    },
+    {
+      "key": "expedia",
+      "shared": 7,
+      "total": 50,
+      "score": 0.1186
+    }
+  ],
+  "zscaler": [
+    {
+      "key": "epam-systems",
+      "shared": 8,
+      "total": 40,
+      "score": 0.1356
+    },
+    {
+      "key": "vmware",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1087
+    },
+    {
+      "key": "wipro",
+      "shared": 5,
+      "total": 24,
+      "score": 0.1087
+    },
+    {
+      "key": "accolite",
+      "shared": 4,
+      "total": 17,
+      "score": 0.1
+    },
+    {
+      "key": "qualcomm",
+      "shared": 5,
+      "total": 29,
+      "score": 0.098
+    },
+    {
+      "key": "turing",
+      "shared": 5,
+      "total": 35,
+      "score": 0.0877
+    }
+  ],
+  "linkedin": [
+    {
+      "key": "meta",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    },
+    {
+      "key": "oracle",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    },
+    {
+      "key": "yandex",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    },
+    {
+      "key": "adobe",
+      "shared": 30,
+      "total": 100,
+      "score": 0.1765
+    },
+    {
+      "key": "microsoft",
+      "shared": 30,
+      "total": 100,
+      "score": 0.1765
+    },
+    {
+      "key": "yahoo",
+      "shared": 30,
+      "total": 100,
+      "score": 0.1765
+    }
+  ],
+  "paypal": [
+    {
+      "key": "walmart-labs",
+      "shared": 41,
+      "total": 100,
+      "score": 0.2579
+    },
+    {
+      "key": "servicenow",
+      "shared": 34,
+      "total": 76,
+      "score": 0.2394
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 38,
+      "total": 100,
+      "score": 0.2346
+    },
+    {
+      "key": "oracle",
+      "shared": 33,
+      "total": 100,
+      "score": 0.1976
+    },
+    {
+      "key": "zoho",
+      "shared": 32,
+      "total": 100,
+      "score": 0.1905
+    },
+    {
+      "key": "salesforce",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    }
+  ],
+  "nutanix": [
+    {
+      "key": "walmart-labs",
+      "shared": 23,
+      "total": 100,
+      "score": 0.1917
+    },
+    {
+      "key": "intuit",
+      "shared": 16,
+      "total": 70,
+      "score": 0.1649
+    },
+    {
+      "key": "ebay",
+      "shared": 16,
+      "total": 73,
+      "score": 0.16
+    },
+    {
+      "key": "visa",
+      "shared": 15,
+      "total": 67,
+      "score": 0.1579
+    },
+    {
+      "key": "servicenow",
+      "shared": 16,
+      "total": 76,
+      "score": 0.1553
+    },
+    {
+      "key": "bytedance",
+      "shared": 13,
+      "total": 58,
+      "score": 0.1477
+    }
+  ],
+  "nvidia": [
+    {
+      "key": "oracle",
+      "shared": 39,
+      "total": 100,
+      "score": 0.2422
+    },
+    {
+      "key": "yandex",
+      "shared": 36,
+      "total": 100,
+      "score": 0.2195
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 34,
+      "total": 100,
+      "score": 0.2048
+    },
+    {
+      "key": "servicenow",
+      "shared": 29,
+      "total": 76,
+      "score": 0.1973
+    },
+    {
+      "key": "cisco",
+      "shared": 28,
+      "total": 77,
+      "score": 0.1879
+    },
+    {
+      "key": "salesforce",
+      "shared": 31,
+      "total": 100,
+      "score": 0.1834
+    }
+  ],
+  "lyft": [
+    {
+      "key": "servicenow",
+      "shared": 9,
+      "total": 76,
+      "score": 0.1023
+    },
+    {
+      "key": "sofi",
+      "shared": 3,
+      "total": 13,
+      "score": 0.0968
+    },
+    {
+      "key": "palo-alto-networks",
+      "shared": 3,
+      "total": 16,
+      "score": 0.0882
+    },
+    {
+      "key": "pinterest",
+      "shared": 5,
+      "total": 45,
+      "score": 0.082
+    },
+    {
+      "key": "tinkoff",
+      "shared": 4,
+      "total": 35,
+      "score": 0.0769
+    },
+    {
+      "key": "epam-systems",
+      "shared": 4,
+      "total": 40,
+      "score": 0.0702
+    }
+  ],
+  "paytm": [
+    {
+      "key": "servicenow",
+      "shared": 17,
+      "total": 76,
+      "score": 0.1789
+    },
+    {
+      "key": "tcs",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1525
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 18,
+      "total": 100,
+      "score": 0.1525
+    },
+    {
+      "key": "bytedance",
+      "shared": 12,
+      "total": 58,
+      "score": 0.1463
+    },
+    {
+      "key": "visa",
+      "shared": 13,
+      "total": 67,
+      "score": 0.1444
+    },
+    {
+      "key": "yandex",
+      "shared": 17,
+      "total": 100,
+      "score": 0.1429
+    }
+  ],
+  "oracle": [
+    {
+      "key": "adobe",
+      "shared": 58,
+      "total": 100,
+      "score": 0.4085
+    },
+    {
+      "key": "microsoft",
+      "shared": 58,
+      "total": 100,
+      "score": 0.4085
+    },
+    {
+      "key": "uber",
+      "shared": 57,
+      "total": 100,
+      "score": 0.3986
+    },
+    {
+      "key": "amazon",
+      "shared": 56,
+      "total": 100,
+      "score": 0.3889
+    },
+    {
+      "key": "apple",
+      "shared": 56,
+      "total": 100,
+      "score": 0.3889
+    },
+    {
+      "key": "meta",
+      "shared": 56,
+      "total": 100,
+      "score": 0.3889
+    }
+  ],
+  "meesho": [
+    {
+      "key": "mathworks",
+      "shared": 3,
+      "total": 29,
+      "score": 0.0698
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 4,
+      "total": 47,
+      "score": 0.0667
+    },
+    {
+      "key": "palo-alto-networks",
+      "shared": 2,
+      "total": 16,
+      "score": 0.0645
+    },
+    {
+      "key": "cognizant",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0571
+    },
+    {
+      "key": "deloitte",
+      "shared": 2,
+      "total": 20,
+      "score": 0.0571
+    },
+    {
+      "key": "doordash",
+      "shared": 5,
+      "total": 77,
+      "score": 0.0562
+    }
+  ],
+  "phonepe": [
+    {
+      "key": "ebay",
+      "shared": 19,
+      "total": 73,
+      "score": 0.1439
+    },
+    {
+      "key": "salesforce",
+      "shared": 22,
+      "total": 100,
+      "score": 0.141
+    },
+    {
+      "key": "samsung",
+      "shared": 18,
+      "total": 74,
+      "score": 0.1343
+    },
+    {
+      "key": "zepto",
+      "shared": 12,
+      "total": 27,
+      "score": 0.129
+    },
+    {
+      "key": "flipkart",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1266
+    },
+    {
+      "key": "walmart-labs",
+      "shared": 20,
+      "total": 100,
+      "score": 0.1266
+    }
+  ],
+  "makemytrip": [
+    {
+      "key": "oracle",
+      "shared": 16,
+      "total": 100,
+      "score": 0.1468
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 14,
+      "total": 100,
+      "score": 0.1261
+    },
+    {
+      "key": "uber",
+      "shared": 14,
+      "total": 100,
+      "score": 0.1261
+    },
+    {
+      "key": "servicenow",
+      "shared": 11,
+      "total": 76,
+      "score": 0.1222
+    },
+    {
+      "key": "netflix",
+      "shared": 6,
+      "total": 31,
+      "score": 0.12
+    },
+    {
+      "key": "adobe",
+      "shared": 13,
+      "total": 100,
+      "score": 0.1161
+    }
+  ],
+  "medianet": [
+    {
+      "key": "makemytrip",
+      "shared": 6,
+      "total": 25,
+      "score": 0.1034
+    },
+    {
+      "key": "goldman-sachs",
+      "shared": 12,
+      "total": 100,
+      "score": 0.0945
+    },
+    {
+      "key": "yahoo",
+      "shared": 12,
+      "total": 100,
+      "score": 0.0945
+    },
+    {
+      "key": "instacart",
+      "shared": 5,
+      "total": 19,
+      "score": 0.0943
+    },
+    {
+      "key": "intel",
+      "shared": 5,
+      "total": 20,
+      "score": 0.0926
+    },
+    {
+      "key": "morgan-stanley",
+      "shared": 7,
+      "total": 47,
+      "score": 0.0886
+    }
+  ],
+  "meta": [
+    {
+      "key": "adobe",
+      "shared": 94,
+      "total": 100,
+      "score": 0.8868
+    },
+    {
+      "key": "microsoft",
+      "shared": 93,
+      "total": 100,
+      "score": 0.8692
+    },
+    {
+      "key": "apple",
+      "shared": 91,
+      "total": 100,
+      "score": 0.8349
+    },
+    {
+      "key": "amazon",
+      "shared": 90,
+      "total": 100,
+      "score": 0.8182
+    },
+    {
+      "key": "uber",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "yahoo",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    }
+  ],
+  "microsoft": [
+    {
+      "key": "adobe",
+      "shared": 98,
+      "total": 100,
+      "score": 0.9608
+    },
+    {
+      "key": "amazon",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "apple",
+      "shared": 96,
+      "total": 100,
+      "score": 0.9231
+    },
+    {
+      "key": "meta",
+      "shared": 93,
+      "total": 100,
+      "score": 0.8692
+    },
+    {
+      "key": "uber",
+      "shared": 89,
+      "total": 100,
+      "score": 0.8018
+    },
+    {
+      "key": "yahoo",
+      "shared": 87,
+      "total": 100,
+      "score": 0.7699
+    }
+  ],
+  "mathworks": [
+    {
+      "key": "meesho",
+      "shared": 3,
+      "total": 17,
+      "score": 0.0698
+    },
+    {
+      "key": "zomato",
+      "shared": 3,
+      "total": 21,
+      "score": 0.0638
+    },
+    {
+      "key": "vmware",
+      "shared": 3,
+      "total": 24,
+      "score": 0.06
+    },
+    {
+      "key": "atlassian",
+      "shared": 5,
+      "total": 63,
+      "score": 0.0575
+    },
+    {
+      "key": "cisco",
+      "shared": 5,
+      "total": 77,
+      "score": 0.0495
+    },
+    {
+      "key": "capital-one",
+      "shared": 3,
+      "total": 38,
+      "score": 0.0469
+    }
+  ]
+}

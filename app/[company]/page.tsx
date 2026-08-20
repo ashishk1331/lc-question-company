@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 
 import CompanyDashboard from '@/components/CompanyDashboard';
 import CompanyGlyph from '@/components/CompanyGlyph';
-import { companyIndex, hasIcon, questions } from '@/lib/bank';
+import { companyIndex, hasIcon, questions, relatedFor } from '@/lib/bank';
 
 export function generateStaticParams() {
   return Object.keys(questions).map((company) => ({ company }));
@@ -51,6 +51,20 @@ export default async function Page({
     ]),
   );
 
+  const related = relatedFor(companyKey);
+
+  const relatedGlyphs = Object.fromEntries(
+    related.map((company) => [
+      company.key,
+      <CompanyGlyph
+        key={company.key}
+        companyKey={company.key}
+        name={company.name}
+        size="size-6"
+      />,
+    ]),
+  );
+
   return (
     <CompanyDashboard
       company={{
@@ -63,6 +77,8 @@ export default async function Page({
       glyph={
         <CompanyGlyph companyKey={companyKey} name={entry.name} size="size-5" />
       }
+      related={related}
+      relatedGlyphs={relatedGlyphs}
       questions={entry.questions}
     />
   );

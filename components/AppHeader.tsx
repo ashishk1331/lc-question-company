@@ -39,7 +39,7 @@ export default function AppHeader({
   }
 
   return (
-    <header className="pb-4 lg:sticky lg:top-0 lg:z-30 lg:-mx-8 lg:flex lg:h-[var(--header-h)] lg:items-center lg:border-b lg:border-hairline lg:bg-background/85 lg:px-8 lg:pb-0 lg:backdrop-blur">
+    <header className="pb-4 lg:sticky lg:top-0 lg:z-30 lg:-mx-8 lg:flex lg:h-[var(--header-h)] lg:items-center lg:border-b lg:border-hairline lg:bg-background lg:px-8 lg:pb-0 ">
       <div className="flex w-full items-center gap-3">
         <LogoMark className="size-8 shrink-0" />
 

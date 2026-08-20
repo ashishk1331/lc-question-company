@@ -11,6 +11,7 @@ import CompanyDirectory from '@/components/CompanyDirectory';
 import DashboardShell from '@/components/DashboardShell';
 import Description, { Keyword, Strong } from '@/components/Description';
 import QuestionRow from '@/components/QuestionRow';
+import RelatedCompanies from '@/components/RelatedCompanies';
 import StatStrip from '@/components/StatStrip';
 import TabStrip from '@/components/TabStrip';
 import { ArrowLeftIcon, FilterGlyph } from '@/components/icons';
@@ -18,6 +19,7 @@ import {
   type CompanyListItem,
   DIFFICULTIES,
   DIFFICULTY_META,
+  type RelatedCompany,
   countByDifficulty,
   difficultySegments,
   formatCount,
@@ -42,6 +44,8 @@ type CompanyDashboardProps = {
   directoryGlyphs: Record<string, React.ReactNode>;
   /** Server-rendered glyph for the header pill; see <CompanyGlyph />. */
   glyph: React.ReactNode;
+  related: RelatedCompany[];
+  relatedGlyphs: Record<string, React.ReactNode>;
   questions: Question[];
 };
 
@@ -50,6 +54,8 @@ export default function CompanyDashboard({
   directory,
   directoryGlyphs,
   glyph,
+  related,
+  relatedGlyphs,
   questions,
 }: CompanyDashboardProps) {
   const [tab, setTab] = useState<string>('ALL');
@@ -110,6 +116,7 @@ export default function CompanyDashboard({
       />
 
       <DashboardShell
+        sidebarOnMobile={false}
         sidebar={
           <CompanyDirectory
             companies={directory}
@@ -217,6 +224,13 @@ export default function CompanyDashboard({
               </ul>
             )}
           </section>
+
+          <RelatedCompanies
+            companyName={company.name}
+            items={related}
+            glyphs={relatedGlyphs}
+            complete={questions.length > 0 && solvedCount === questions.length}
+          />
 
           <div className="lg:hidden">
             <Link

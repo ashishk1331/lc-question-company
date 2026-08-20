@@ -106,3 +106,15 @@ export type CompanyListItem = {
   counts?: Record<Difficulty, number>;
   hasIcon: boolean;
 };
+
+export type RelatedCompany = {
+  key: string;
+  name: string;
+  /** Questions this company shares with the source company. */
+  shared: number;
+  total: number;
+  score: number;
+  /** Full id list, so the client can work out how much of it you have solved. */
+  ids: string[];
+  hasIcon: boolean;
+};
