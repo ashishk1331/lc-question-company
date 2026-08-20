@@ -3,52 +3,65 @@
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 
-import bank from '@/data/question_bank.json';
+import { type CompanyListItem, formatCount } from '@/lib/stats';
 import { useQuestionsStore } from '@/store/useQuestionsStore';
-import { type Data } from '@/types/types';
-
-const questions = bank as unknown as Data;
 
 type RowProps = {
-  company: string;
+  company: CompanyListItem;
+  /** Server-rendered company glyph; see <CompanyGlyph />. */
+  glyph?: React.ReactNode;
+  /** Marks the entry the current page is showing. */
+  active?: boolean;
 };
 
-export default function Row({ company }: RowProps) {
+export default function Row({ company, glyph, active = false }: RowProps) {
   const ids = useQuestionsStore((state) => state.ids);
-  const company_questions_ids = questions[company]["questions"].map((q) => q.id);
+  const hydrated = useQuestionsStore((state) => state.hydrated);
 
-  if (company_questions_ids.length < 2) {
-    return null;
-  }
+  const solved =
+    hydrated && company.ids
+      ? company.ids.filter((id) => ids.includes(id)).length
+      : 0;
 
-  const done_for_company = company_questions_ids.filter((id) =>
-    ids.includes(id),
-  );
-
-  const precent = Math.round(
-    (done_for_company.length / company_questions_ids.length) * 100,
-  );
+  const percent =
+    company.total > 0 ? Math.round((solved / company.total) * 100) : 0;
 
   return (
-    <li key={company} className="flex gap-x-4 px-3 py-5 justify-between">
-      <div className="min-w-0">
-        <Link
-          href={'/' + company}
-          className="text-sm font-semibold leading-6 text-gray-900"
-        >
-          {company}
-        </Link>
-      </div>
-      {precent > 0 && (
+    <li>
+      <Link
+        href={`/${company.key}`}
+        aria-current={active ? 'page' : undefined}
+        className={twMerge(
+          'flex items-center gap-3 rounded-xl px-3 py-3.5 transition-colors hover:bg-surface lg:gap-2.5 lg:px-2.5 lg:py-2 lg:hover:bg-surface-2',
+          active && 'bg-surface-2 lg:bg-surface-2',
+        )}
+      >
+        {glyph}
+
         <span
           className={twMerge(
-            'inline-flex items-center rounded-md bg-indigo-100 px-1.5 py-0.5 text-xs font-medium text-indigo-700 border border-indigo-700',
-            precent === 100 && 'bg-green-100 text-green-700',
+            'min-w-0 flex-1 truncate text-[15px] text-foreground lg:text-[13px]',
+            active && 'font-medium',
           )}
         >
-          {precent}%
+          {company.name}
         </span>
-      )}
+
+        <span className="tnum shrink-0 text-[13px] text-muted-2 lg:text-[12px]">
+          {formatCount(company.total)}
+        </span>
+
+        {percent > 0 && (
+          <span
+            className={twMerge(
+              'tnum shrink-0 rounded-full bg-chip px-2 py-1 text-[11px] font-medium text-foreground lg:px-1.5 lg:py-0.5 lg:text-[10px]',
+              percent === 100 && 'bg-positive/15 text-positive',
+            )}
+          >
+            {percent}%
+          </span>
+        )}
+      </Link>
     </li>
   );
 }

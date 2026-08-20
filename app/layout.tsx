@@ -1,5 +1,7 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+
+import StoreHydration from '@/components/StoreHydration';
 
 import './globals.css';
 
@@ -18,6 +20,10 @@ export const metadata: Metadata = {
   description: 'A checklist for questions asked by various companies.',
 };
 
+export const viewport: Viewport = {
+  themeColor: '#0e0e0f',
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,9 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto max-w-xl p-4`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background font-sans text-foreground antialiased`}
       >
-        {children}
+        <StoreHydration />
+        <div className="mx-auto min-h-dvh w-full max-w-xl px-4 pb-16 pt-5 lg:max-w-[1500px] lg:px-8 lg:pb-0 lg:pt-0">
+          {children}
+        </div>
       </body>
     </html>
   );

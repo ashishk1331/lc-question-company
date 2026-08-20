@@ -1,39 +1,51 @@
-import Row from '@/components/CompanyRow';
-import TopCompanies from '@/components/TopCompanies';
-import { type Data } from '@/types/types';
+import CompanyGlyph from '@/components/CompanyGlyph';
+import HomeDashboard from '@/components/HomeDashboard';
+import { companyList, totalListings, uniqueByDifficulty } from '@/lib/bank';
 
-import bank from '../data/question_bank.json';
+export default function Home() {
+  const companies = companyList();
 
-const questions = bank as unknown as Data;
+  // 67 companies now carry a logo, which is far too many chips to scroll
+  // through; quick access shows the biggest ones.
+  const iconCompanies = companies
+    .filter((company) => company.hasIcon)
+    .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name))
+    .slice(0, 12)
+    .map(({ key, name, hasIcon }) => ({ key, name, hasIcon }));
 
-const directory = Object.groupBy(Object.keys(questions), (q) =>
-  q[0].toUpperCase(),
-) as Record<string, string[]>;
+  // Rendered here so the icon registry never reaches the client bundle.
+  const rowGlyphs = Object.fromEntries(
+    companies.map((company) => [
+      company.key,
+      <CompanyGlyph
+        key={company.key}
+        companyKey={company.key}
+        name={company.name}
+        size="size-6 lg:size-5"
+      />,
+    ]),
+  );
 
-const labels = Object.keys(directory);
-labels.sort();
+  const chipGlyphs = Object.fromEntries(
+    iconCompanies.map((company) => [
+      company.key,
+      <CompanyGlyph
+        key={company.key}
+        companyKey={company.key}
+        name={company.name}
+        size="size-4"
+      />,
+    ]),
+  );
 
-export default function Example() {
   return (
-    <>
-      <TopCompanies />
-      <nav className="h-full overflow-y-auto" aria-label="Directory">
-        {labels.map((letter) => (
-          <div key={letter}>
-            <div className="sticky top-0 z-10 border-y border-gray-100 bg-gray-50 px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900">
-              <h3>{letter}</h3>
-            </div>
-            <ul
-              role="list"
-              className="divide-y divide-gray-100"
-            >
-              {directory[letter].map((company) => (
-                <Row key={company} company={company} />
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
-    </>
+    <HomeDashboard
+      companies={companies}
+      iconCompanies={iconCompanies}
+      rowGlyphs={rowGlyphs}
+      chipGlyphs={chipGlyphs}
+      totalListings={totalListings()}
+      uniqueByDifficulty={uniqueByDifficulty()}
+    />
   );
 }

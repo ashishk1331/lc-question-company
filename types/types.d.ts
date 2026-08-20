@@ -7,4 +7,4 @@ export type Question = {
   id: string;
 };
 
-export type Data = Record<string, { name: string; questions: Question[]; }>;
+export type Data = Record<string, { name: string; questions: Question[] }>;

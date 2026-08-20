@@ -1,3 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  --background: #0e0e0f;
+  --foreground: #ffffff;
+  --surface: #1c1c1e;
+  --surface-2: #252528;
+  --chip: #2c2c30;
+  --hairline: #2a2a2e;
+  --muted: #8e8e93;
+  --muted-2: #6a6a70;
+  --positive: #4ade80;
+  --brand: #7c6cf5;
+
+  --scroll-thumb: #46464f;
+  --scroll-thumb-hover: #5e5e6a;
+
+  /* Desktop top bar height; the sticky rail is measured against it. */
+  --header-h: 68px;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  /*
+   * scrollbar-color inherits, but scrollbar-width does not — it has to be set
+   * on every scroll container, not just the root. Chrome/Firefox use these;
+   * the ::-webkit-* rules below are the fallback for browsers without them.
+   */
+  * {
+    scrollbar-width: thin;
+  }
+
+  html {
+    scrollbar-color: var(--scroll-thumb) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* Transparent border + background-clip keeps the thumb inset from the edge. */
+    border: 3px solid transparent;
+    background-clip: content-box;
+    border-radius: 9999px;
+    background-color: var(--scroll-thumb);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-hover);
+  }
+
+  /* The stat readouts line up column-wise only with tabular figures. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Reserve the scrollbar track so hovering a pane never shifts its content. */
+  .stable-gutter {
+    scrollbar-gutter: stable;
+  }
+
+  /*
+   * Hairline system: one elevated surface split by 1px gaps that let the page
+   * colour show through, instead of separate floating cards.
+   */
+  .panel {
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: var(--hairline);
+  }
+
+  .panel > * {
+    background-color: var(--surface);
+  }
+}

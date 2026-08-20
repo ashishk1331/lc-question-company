@@ -1,30 +1,30 @@
-import { CompanyIcon } from '@trigger.dev/companyicons';
-import companiesWithIcons from "@/data/companiesWithIcons.json";
-import questions from "@/data/question_bank.json";
+'use client';
 
-const companiesIve = Object.keys(questions);
-const companies = [...(new Set(companiesIve).intersection(new Set(companiesWithIcons)))];
+import Link from 'next/link';
 
-export default function TopCompanies() {
+import { type CompanyOption } from '@/components/AppHeader';
+
+type TopCompaniesProps = {
+  companies: CompanyOption[];
+  /** Server-rendered glyphs keyed by company; see <CompanyGlyph />. */
+  glyphs: Record<string, React.ReactNode>;
+};
+
+export default function TopCompanies({ companies, glyphs }: TopCompaniesProps) {
+  if (companies.length === 0) return null;
+
   return (
-    <>
-      <h3>Top Companies</h3>
-      <div className="flex flex-wrap items-center gap-2 my-8">
-        {companies.map((company) => (
-          <a
-            key={company}
-            href={`/${company}`}
-            className="px-3 py-1 rounded-md flex items-center gap-2 border border-indigo-800 bg-indigo-50 text-indigo-800 cursor-pointer"
-          >
-            <CompanyIcon
-              name={company.toLowerCase()}
-              className="size-4"
-              variant="dark"
-            />
-            <span>{company}</span>
-          </a>
-        ))}
-      </div>
-    </>
+    <div className="no-scrollbar -mx-1 flex items-center gap-2 overflow-x-auto px-1 pb-1 lg:hidden">
+      {companies.map((company) => (
+        <Link
+          key={company.key}
+          href={`/${company.key}`}
+          className="flex shrink-0 items-center gap-2 rounded-full bg-surface-2 py-1.5 pl-2 pr-3.5 text-[13px] text-foreground transition-colors hover:bg-chip"
+        >
+          {glyphs[company.key]}
+          {company.name}
+        </Link>
+      ))}
+    </div>
   );
 }
