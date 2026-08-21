@@ -105,7 +105,7 @@ export default function AppHeader({
       </div>
 
       {searchOpen && (
-        <div className="mt-3 flex items-center gap-2.5 rounded-full bg-surface-2 px-4 py-2.5 focus-within:ring-1 focus-within:ring-brand lg:hidden">
+        <div className="t-reveal mt-3 flex items-center gap-2.5 rounded-full bg-surface-2 px-4 py-2.5 focus-within:ring-1 focus-within:ring-brand lg:hidden">
           <SearchIcon className="size-4 shrink-0 text-muted-2" />
           <input
             ref={inputRef}

@@ -24,6 +24,24 @@ type DropdownProps = {
   ) => React.ReactNode;
 };
 
+/**
+ * Exit length, read from the motion token so JS and CSS cannot drift.
+ * getComputedStyle normalises `150ms` to `.15s`, so the unit has to be
+ * honoured — parseFloat alone yields 0.15 and the node unmounts instantly.
+ */
+function closeDurationMs() {
+  if (typeof window === 'undefined') return 150;
+
+  const raw = getComputedStyle(document.documentElement)
+    .getPropertyValue('--duration-quick')
+    .trim();
+
+  const value = parseFloat(raw);
+  if (!Number.isFinite(value) || value <= 0) return 150;
+
+  return raw.endsWith('ms') ? value : value * 1000;
+}
+
 export default function Dropdown({
   value,
   options,
@@ -37,6 +55,8 @@ export default function Dropdown({
 }: DropdownProps) {
   const id = useId();
   const [open, setOpen] = useState(false);
+  // Kept mounted for the length of the exit animation, then dropped.
+  const [closing, setClosing] = useState(false);
   const [query, setQuery] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -44,6 +64,7 @@ export default function Dropdown({
   const triggerRef = useRef<HTMLButtonElement>(null);
   const filterRef = useRef<HTMLInputElement>(null);
   const optionRefs = useRef<(HTMLLIElement | null)[]>([]);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const selected = options.find((option) => option.value === value);
 
@@ -56,6 +77,8 @@ export default function Dropdown({
   }, [options, query]);
 
   function openMenu() {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setClosing(false);
     // Start keyboard movement on the current selection. Done here rather than
     // in an effect: setState inside an effect body causes a cascading render.
     const index = options.findIndex((option) => option.value === value);
@@ -66,6 +89,11 @@ export default function Dropdown({
   function close(refocus = true) {
     setOpen(false);
     setQuery('');
+    // Hold the node through the exit animation, reading its length from the
+    // motion token so the two never drift apart.
+    setClosing(true);
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setClosing(false), closeDurationMs());
     if (refocus) triggerRef.current?.focus();
   }
 
@@ -77,6 +105,13 @@ export default function Dropdown({
   useEffect(() => {
     if (open && filterable) filterRef.current?.focus();
   }, [open, filterable]);
+
+  useEffect(
+    () => () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -163,11 +198,14 @@ export default function Dropdown({
         )}
       </button>
 
-      {open && (
+      {(open || closing) && (
         <div
+          data-origin={align === 'end' ? 'top-right' : 'top-left'}
+          aria-hidden={closing || undefined}
           className={twMerge(
-            'absolute z-50 mt-2 min-w-full overflow-hidden rounded-xl border border-hairline bg-surface shadow-2xl shadow-black/50',
+            't-dropdown absolute z-50 mt-2 min-w-full overflow-hidden rounded-xl border border-hairline bg-surface shadow-2xl shadow-black/50',
             align === 'end' ? 'right-0' : 'left-0',
+            closing && 'is-closing pointer-events-none',
             menuClassName,
           )}
         >

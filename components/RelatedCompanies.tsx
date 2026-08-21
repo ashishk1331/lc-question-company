@@ -101,7 +101,7 @@ export default function RelatedCompanies({
 
               <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-chip">
                 <div
-                  className="h-full rounded-full bg-positive transition-[width] duration-300"
+                  className="h-full rounded-full bg-positive transition-[width] duration-slow"
                   style={{ width: `${Math.max(headStart, done > 0 ? 3 : 0)}%` }}
                 />
               </div>

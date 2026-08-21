@@ -21,6 +21,43 @@
 
   /* Desktop top bar height; the sticky rail is measured against it. */
   --header-h: 68px;
+
+  /* Motion scale — transitions.dev tokens (transitions-polish/_root.css).
+     Values are referenced by usage, not by nearest number. */
+  --duration-stagger: 40ms;
+  --duration-micro: 80ms;
+  --duration-quick: 150ms; /* dropdown close, text swap */
+  --duration-fast: 250ms; /* dropdown open, tabs, icon swap */
+  --duration-medium: 350ms; /* panel close */
+  --duration-slow: 400ms; /* panel open, content reveal */
+  --duration-very-slow: 500ms; /* emphasis moments */
+
+  --ease-smooth-out: cubic-bezier(
+    0.22,
+    1,
+    0.36,
+    1
+  ); /* default: open/close, resize */
+  --ease-in-out: ease-in-out; /* swaps and reveals */
+  --ease-out: ease-out; /* tooltips */
+  --ease-linear: linear; /* shimmer, spinner */
+  --ease-bounce: cubic-bezier(0.34, 1.36, 0.64, 1); /* pop entrances */
+  --ease-bounce-strong: cubic-bezier(
+    0.34,
+    3.85,
+    0.64,
+    1
+  ); /* hover-out return */
+
+  --distance-micro: 4px;
+  --distance-base: 8px;
+  --distance-medium: 12px;
+
+  --scale-medium: 0.97; /* dropdown open */
+  --scale-tiny: 0.99; /* dropdown close */
+
+  --blur-small: 2px;
+  --blur-medium: 3px;
 }
 
 @layer base {
@@ -72,6 +109,22 @@
   .tnum {
     font-variant-numeric: tabular-nums;
   }
+
+  /*
+   * Required motion guard. Every transitions.dev snippet ships one; this
+   * project had none at all, so it is applied globally rather than per
+   * component.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @layer utilities {
@@ -101,5 +154,68 @@
 
   .panel > * {
     background-color: var(--surface);
+  }
+}
+
+@layer components {
+  /*
+   * transitions-dev "menu dropdown", adapted for conditional mounting: React
+   * unmounts the menu, so keyframes carry the enter (a class toggle would
+   * mount already-open and skip the transition). Durations, scales, easing
+   * and origin follow the recipe exactly.
+   */
+  @keyframes t-dropdown-in {
+    from {
+      opacity: 0;
+      transform: scale(var(--scale-medium));
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes t-dropdown-out {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(var(--scale-tiny));
+    }
+  }
+
+  .t-dropdown {
+    transform-origin: top left;
+    will-change: transform, opacity;
+    animation: t-dropdown-in var(--duration-fast) var(--ease-smooth-out) both;
+  }
+
+  .t-dropdown[data-origin='top-right'] {
+    transform-origin: top right;
+  }
+
+  /* Close is quicker and quieter than open — dismissal gets out of the way. */
+  .t-dropdown.is-closing {
+    animation: t-dropdown-out var(--duration-quick) var(--ease-smooth-out) both;
+  }
+
+  /* Small surface opening from a trigger; same family as the dropdown. */
+  @keyframes t-reveal-in {
+    from {
+      opacity: 0;
+      transform: translateY(calc(var(--distance-micro) * -1));
+      filter: blur(var(--blur-small));
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .t-reveal {
+    animation: t-reveal-in var(--duration-fast) var(--ease-smooth-out) both;
   }
 }

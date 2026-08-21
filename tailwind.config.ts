@@ -25,6 +25,19 @@ export default {
         medium: '#fbbf3c',
         hard: '#f9736a',
       },
+      transitionTimingFunction: {
+        // Smooth-out is the motion scale's default curve.
+        DEFAULT: 'var(--ease-smooth-out)',
+        'smooth-out': 'var(--ease-smooth-out)',
+        'bounce-strong': 'var(--ease-bounce-strong)',
+      },
+      transitionDuration: {
+        DEFAULT: 'var(--duration-quick)',
+        quick: 'var(--duration-quick)',
+        fast: 'var(--duration-fast)',
+        medium: 'var(--duration-medium)',
+        slow: 'var(--duration-slow)',
+      },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-geist-mono)', 'monospace'],

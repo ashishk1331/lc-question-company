@@ -44,7 +44,7 @@ export default function Legend({ segments, activeKey }: LegendProps) {
         );
 
         const className =
-          'flex items-center gap-2.5 rounded-xl px-2 py-2.5 transition-opacity duration-200' +
+          'flex items-center gap-2.5 rounded-xl px-2 py-2.5 transition-opacity duration-fast' +
           (dimmed ? ' opacity-40' : '');
 
         return segment.href ? (

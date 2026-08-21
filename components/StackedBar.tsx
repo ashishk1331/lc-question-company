@@ -23,7 +23,7 @@ export default function StackedBar({ segments, activeKey }: StackedBarProps) {
         return (
           <div
             key={segment.key}
-            className="min-w-[7px] rounded-[10px] transition-opacity duration-200"
+            className="min-w-[7px] rounded-[10px] transition-[opacity,flex-grow] duration-fast"
             style={{
               flexGrow: segment.value,
               flexBasis: 0,
